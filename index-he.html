@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>מונטנגרו · 30 באוג׳ – 7 בספט׳ 2026</title>
+<title>מונטנגרו הרומנטית · 30 באוג׳ – 7 בספט׳ 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Heebo:wght@400;500;700;800&family=Frank+Ruhl+Libre:wght@500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,6 @@
   a{color:inherit}
   img{display:block;max-width:100%}
 
-  /* image helper */
   .imgwrap{position:relative;overflow:hidden;background:linear-gradient(135deg,#2a6f7c,#102f42)}
   .imgwrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
   .tphoto{height:168px;border-radius:13px;margin:0 0 15px}
@@ -35,7 +34,6 @@
   .booknote{font-family:"Space Mono","Heebo",monospace;font-size:12px;line-height:1.6;color:var(--muted);margin-top:12px}
   .card:hover .imgwrap img,.tblock:hover .imgwrap img{transform:scale(1.045)}
 
-  /* NAV */
   .nav{position:sticky;top:0;z-index:50;background:rgba(14,42,59,.97);backdrop-filter:blur(6px);border-bottom:1px solid rgba(212,162,97,.25)}
   .nav-inner{max-width:1080px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
   .brand{color:var(--parchment);font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:19px;white-space:nowrap}
@@ -44,7 +42,6 @@
   .nav-links a{color:#cdd9de;text-decoration:none;font-size:13.5px;font-weight:600;padding:6px 10px;border-radius:999px;transition:.18s;white-space:nowrap}
   .nav-links a:hover,.nav-links a.active{background:var(--brass);color:var(--danube)}
 
-  /* HERO */
   .hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;overflow:hidden;background:linear-gradient(160deg,#10324a,#0a2030)}
   .hero .ph,.banner .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,44,.15) 0%,rgba(10,30,44,.35) 45%,rgba(10,28,40,.93) 100%)}
@@ -52,7 +49,7 @@
   .eyebrow{font-family:"Space Mono","Heebo",monospace;font-size:13px;letter-spacing:1px;color:var(--brass)}
   .hero h1{font-size:clamp(42px,8vw,86px);font-weight:700;margin:.18em 0 .1em;text-shadow:0 2px 30px rgba(0,0,0,.4)}
   .hero h1 em{font-style:normal;color:var(--brass)}
-  .hero-sub{font-size:clamp(17px,2.4vw,21px);max-width:50ch;color:#e7eef1}
+  .hero-sub{font-size:clamp(17px,2.4vw,21px);max-width:52ch;color:#e7eef1}
   .hero-facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
   .fact{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 14px;backdrop-filter:blur(4px)}
   .fact .k{font-family:"Space Mono","Heebo",monospace;font-size:11.5px;letter-spacing:.5px;color:var(--brass);display:block}
@@ -62,7 +59,6 @@
   section.block{padding:56px 0}
   .sec-label{font-family:"Space Mono","Heebo",monospace;font-size:12.5px;letter-spacing:1px;color:var(--paprika);margin-bottom:8px}
 
-  /* LEGEND */
   .legend{background:var(--danube);color:#e7eef1}
   .legend h2{color:#fff;font-size:27px}
   .legend .sec-label{color:var(--brass)}
@@ -80,11 +76,11 @@
   .b-culture{background:#e7ddc4;color:#6a5212;border:1px solid #cdbd92}
   .b-food{background:#d6efe9;color:#0c5a52;border:1px solid #9fd6cb}
   .b-shop{background:#f3dde1;color:#8c2f44;border:1px solid #e2b3bd}
+  .b-romantic{background:#fbe4ec;color:#a83258;border:1px solid #f0bcd0}
   .b-drive{background:transparent;color:var(--ink);border:1px solid var(--line)}
   .b-foot{background:#241733;color:#e3c9ff;border:1px solid #5a3f78}
   .legend .b-drive{color:#e7eef1;border-color:#3d5667}
 
-  /* DAY */
   .day{border-top:1px solid var(--line)}
   .banner{position:relative;min-height:300px;display:flex;align-items:flex-end;overflow:hidden;background:linear-gradient(160deg,var(--danube-2),var(--danube))}
   .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,44,.1),rgba(10,28,40,.86))}
@@ -134,11 +130,6 @@
   .transport li .ico{flex:none;width:24px;text-align:center}
   .transport li .price{margin-inline-start:auto;font-family:"Space Mono","Heebo",monospace;font-weight:700;font-size:13.5px;color:var(--danube);white-space:nowrap}
 
-  .shopstrip{background:#fbf0f2;border:1px solid #e2b3bd;border-radius:16px;padding:16px 20px;margin-top:14px}
-  .shopstrip h4{font-family:"Frank Ruhl Libre",serif;font-size:17px;color:#8c2f44;margin:0 0 6px}
-  .shopstrip p{margin:0;font-size:15px;color:#5a3a40}
-  .shopstrip a{color:#8c2f44;font-weight:700;text-decoration:underline}
-
   .notes{background:var(--danube);color:#dfe7eb}
   .notes h2{color:#fff}
   .notes .sec-label{color:var(--brass)}
@@ -151,6 +142,9 @@
   footer{background:#081a26;color:#7e919b;text-align:center;padding:34px 24px;font-size:13.5px}
   footer .mono{color:var(--brass)}
 
+  .langfab{position:fixed;bottom:18px;right:18px;z-index:60;display:inline-flex;align-items:center;gap:7px;background:var(--brass);color:var(--danube);font-family:"Space Mono","Heebo",monospace;font-weight:700;font-size:14px;letter-spacing:.2px;text-decoration:none;padding:11px 17px;border-radius:999px;box-shadow:0 6px 20px rgba(14,42,59,.35);border:1px solid var(--brass-deep);transition:.18s}
+  .langfab:hover{background:#fff;color:var(--danube)}
+
   @media (max-width:560px){
     body{font-size:16.5px}.hero{min-height:78vh}
     .nav-links{width:100%;margin-inline-start:0;justify-content:flex-start}.spine{margin-inline-start:4px}
@@ -159,8 +153,6 @@
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
     .reveal.in{opacity:1;transform:none}
   }
-  .langfab{position:fixed;bottom:18px;right:18px;z-index:60;display:inline-flex;align-items:center;gap:7px;background:var(--brass);color:var(--danube);font-family:"Space Mono","Heebo",monospace;font-weight:700;font-size:14px;letter-spacing:.2px;text-decoration:none;padding:11px 17px;border-radius:999px;box-shadow:0 6px 20px rgba(14,42,59,.35);border:1px solid var(--brass-deep);transition:.18s}
-  .langfab:hover{background:#fff;color:var(--danube)}
 </style>
 </head>
 <body>
@@ -169,26 +161,25 @@
   <div class="nav-inner">
     <div class="brand">מונטנגרו <b>·</b> <span class="mono" style="font-size:14px">30 אוג׳–7 ספט׳</span></div>
     <div class="nav-links">
-      <a href="#overview">סקירה</a><a href="#day1">א׳</a><a href="#day2">ב׳</a>
-      <a href="#day3">ג׳</a><a href="#day4">ד׳</a><a href="#day5">ה׳</a><a href="#day6">ו׳</a>
-      <a href="#day7">ש׳</a><a href="#day8">א׳</a><a href="#day9">יציאה</a><a href="#notes">הערות</a>
-      <a href="index.html" style="background:var(--brass);color:var(--danube)">English</a>
+      <a href="#overview">סקירה</a><a href="#day1">1</a><a href="#day2">2</a><a href="#day3">3</a>
+      <a href="#day4">4</a><a href="#day5">5</a><a href="#day6">6</a><a href="#day7">7</a>
+      <a href="#day8">8</a><a href="#day9">יציאה</a><a href="#notes">הערות</a>
     </div>
   </div>
 </nav>
 
 <header class="hero">
-  <img class="ph" alt="מפרץ קוטור בשעת בין הערביים"
-    src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%20Bay%2C%20Montenegro.jpg?width=1600" onerror="this.remove()">
+  <img class="ph" alt="הרי הדורמיטור והמפרץ"
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/Durmitor.jpg?width=1600" onerror="this.remove()">
   <div class="hero-content">
-    <div class="eyebrow">טיול משפחתי · 8 לילות · מפרץ קוטור והריביירה</div>
-    <h1>שמונה ימים ב<em>מונטנגרו</em></h1>
-    <p class="hero-sub">לולאה נינוחה לאורך האדריאטי — שלושה בסיסי בוטיק, רכב, ואף נסיעה אחת לא ארוכה משעה. בנוי לארבעה נוסעים סביב בקרים רגועים, מנוחת צהריים אמיתית וערבים נינוחים ברגל.</p>
+    <div class="eyebrow">שני זוגות · 70+ · הרים, אגמים וחוף · קצב נינוח ורומנטי</div>
+    <h1>מונטנגרו <em>הרומנטית</em></h1>
+    <p class="hero-sub">שני חלקים, שני עולמות: ארבעה לילות בהרי הדורמיטור הקסומים, ואז ארבעה לילות על החוף האדריאטי ואגם סקאדאר. בנוי לקצב רגוע ונוח, עם הליכות שטוחות וקצרות, נסיעות נעימות ב-SUV מרווח, ורגעים רומנטיים בכל יום.</p>
     <div class="hero-facts">
       <div class="fact"><span class="k">תאריכים</span><span class="v">30 אוג׳ – 7 ספט׳ 2026</span></div>
-      <div class="fact"><span class="k">קבוצה</span><span class="v">4 נוסעים · גיל ממוצע 75</span></div>
-      <div class="fact"><span class="k">רכב</span><span class="v">נהיגה עצמית</span></div>
-      <div class="fact"><span class="k">מסלול</span><span class="v">טיבט · קוטור · בודבה · טיבט</span></div>
+      <div class="fact"><span class="k">קבוצה</span><span class="v">2 זוגות · גיל 70+</span></div>
+      <div class="fact"><span class="k">רכב</span><span class="v">SUV מרווח · נהיגה עצמית</span></div>
+      <div class="fact"><span class="k">מסלול</span><span class="v">דורמיטור (ז'בליאק) · החוף (בודבה/פטרובאץ')</span></div>
     </div>
   </div>
 </header>
@@ -196,22 +187,22 @@
 <section class="block legend" id="overview">
   <div class="wrap">
     <div class="sec-label">איך לקרוא את התוכנית</div>
-    <h2>לולאה נינוחה, שלושה בסיסים, אותו קצב רגוע בכל יום</h2>
+    <h2>שני חלקים, קצב נינוח, ורומנטיקה בכל יום</h2>
     <p style="max-width:66ch;color:#c4d0d6;margin-top:14px">
-      כל יום מתנהל לפי הקצב שביקשתם: <b style="color:#fff">בוקר בחוץ</b>, <b style="color:#fff">מנוחת צהריים אמיתית (14:00–16:00)</b> ליד המלון, ואז <b style="color:#fff">אחר-צהריים / ערב</b> — כשהרכב חונה עד <b style="color:#fff">19:00</b> וערב נינוח <b style="color:#fff">ברגל</b> עד סביבות 22:00. אף נסיעה אינה עולה על שעה, ואנחנו עוצרים לפחות פעם בשעה בדרך.</p>
+      הטיול בנוי בשני חלקים: <b style="color:#fff">חלק א' — הרי הדורמיטור</b> (4 לילות בז'בליאק), עם אגמים, פסגות וקניון טארה; ואז <b style="color:#fff">חלק ב' — החוף ואגם סקאדאר</b> (4 לילות בבודבה/פטרובאץ'). כל יום מתנהל בנחת — בוקר רגוע, מנוחת צהריים, וערב נינוח — עם הליכות קצרות ושטוחות ונסיעות נופיות ונוחות.</p>
     <div class="legend-grid">
-      <div class="legend-item"><span class="badge b-gentle">נוח</span><span class="desc">שטוח ונינוח — סירות בישיבה ונסיעות קצרות, עם הרבה מקומות לעצור ולנוח.</span></div>
-      <div class="legend-item"><span class="badge b-scenic">נופי</span><span class="desc">נופי מפרץ, איים, אגם וחוף — עצירות במאמץ נמוך ובתמורה גבוהה.</span></div>
-      <div class="legend-item"><span class="badge b-culture">תרבות</span><span class="desc">ערים עתיקות, כנסיות, מוזיאונים והבירה המלכותית — היסטוריה בהליכה.</span></div>
-      <div class="legend-item"><span class="badge b-food">אוכל ויין</span><span class="desc">קונובות, מרפסות דגים ודרך היין של צרמניצה ליד האגם.</span></div>
-      <div class="legend-item"><span class="badge b-shop">קניות</span><span class="desc">חנויות הבוטיק של פורטו מונטנגרו וחנויות אומן בעיר העתיקה.</span></div>
-      <div class="legend-item"><span class="badge b-drive">🚗 נסיעה</span><span class="desc">קטע נהיגה, עם הזמן המצוין. תמיד פחות משעה, עם עצירה.</span></div>
-      <div class="legend-item"><span class="badge b-foot">🚶 ברגל</span><span class="desc">הרכב חונה — טיול, מרפסת, ערב נינוח קרוב לבסיס.</span></div>
+      <div class="legend-item"><span class="badge b-gentle">נוח</span><span class="desc">שטוח, קצר וללא מאמץ — מתאים לקצב רגוע, עם הרבה מקומות לעצור ולנוח.</span></div>
+      <div class="legend-item"><span class="badge b-scenic">נופי</span><span class="desc">אגמים, פסגות, קניונים וחוף — תצפיות יפהפיות, רובן ממש מהרכב או בהליכה קצרה.</span></div>
+      <div class="legend-item"><span class="badge b-culture">תרבות</span><span class="desc">צטינייה הבירה המלכותית, קוטור הוונציאנית ועיירות אבן ציוריות.</span></div>
+      <div class="legend-item"><span class="badge b-food">אוכל ויין</span><span class="desc">קונובות הרים, דגי פורל טריים ומרפסות מול הים והאגמים.</span></div>
+      <div class="legend-item"><span class="badge b-romantic">💑 רומנטי</span><span class="desc">שקיעות, שיט זוגי פרטי וארוחות מול המים — רגעים לשניים.</span></div>
+      <div class="legend-item"><span class="badge b-drive">🚗 נסיעה</span><span class="desc">קטע נהיגה ב-SUV, עם הזמן המצוין. נופי ונוח, עם עצירות בדרך.</span></div>
+      <div class="legend-item"><span class="badge b-foot">🚶 ברגל</span><span class="desc">הליכה שטוחה וקצרה — טיילת, דק עץ או סמטאות אבן.</span></div>
     </div>
     <div class="callout">
-      <h4>טיול-כוכב או טיול מעגלי? — מה החלטנו</h4>
-      <p>לא קיצוניות. <b>טיול-כוכב טהור</b> (מלון אחד לכל השבוע) יחייב נסיעות הלוך-ושוב יומיות הרבה מעבר למגבלת השעה שלכם, כי מונטנגרו ארוכה וצרה. <b>טיול מעגלי מלא</b> (מלון חדש כמעט בכל לילה) פירושו אריזה ופריקה בלי הפסקה — מתיש בקצב הזה.</p>
-      <p>לכן זו <b>לולאה נינוחה של 2–3 בסיסים</b>: שלושה לילות במפרץ קוטור, שלושה בריביירה של בודבה, שניים בטיבט ליד שדה התעופה — רק שני מעברי מלון, כל קטע פחות משעה, והטיול מסתיים עשר דקות נסיעה מהטיסה הביתה.</p>
+      <h4>מבנה הטיול — שני בסיסים בלבד</h4>
+      <p><b>חלק א' (הרים):</b> 4 לילות בז'בליאק, לב הפארק הלאומי דורמיטור — אגם שחור, רכבל פסגות, קניון טארה ויער ביוגרדסקה.</p>
+      <p><b>חלק ב' (חוף):</b> 4 לילות בבודבה/פטרובאץ' — סווטי סטפן, אגם סקאדאר, קוטור ופראסט, יום חופשי על החוף, וסיום בלוסטיצה ביי. רק החלפת מלון אחת בכל הטיול.</p>
     </div>
   </div>
 </section>
@@ -219,85 +210,85 @@
 <!-- DAY 1 -->
 <article class="day" id="day1">
   <div class="banner">
-    <img class="ph" alt="מפרץ קוטור"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Kotor.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="הרי הדורמיטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Durmitor%20National%20Park.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 01 — ראשון</span></div>
-      <h2>נחיתה, התמקמות, נשימה במפרץ</h2><div class="when">30 אוג׳ · הגעה בסביבות 13:00 · בסיס: מפרץ קוטור (3 לילות)</div></div>
+      <h2>נחיתה והעפלה אל ההרים</h2><div class="when">30 באוג׳ · נחיתה בטיבט · בסיס: ז'בליאק (4 לילות)</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €45 לאדם</b></span><span class="chip">אווירה: הגעה רגועה</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">יום נסיעה ועלייה להרים</span><span class="chip">אווירה: התרגשות ההגעה</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Tivat Airport Montenegro"><img loading="lazy" alt="שדה התעופה טיבט והמפרץ" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat%20Airport.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">13:00 → 14:30 בערך</div><div class="tcat">הגעה · נסיעה</div>
-        <h3>שדה התעופה טיבט, איסוף הרכב והדרך אל המפרץ</h3>
-        <p>נוחתים בטיבט (TIV), קטן וצמוד ממש למים. אוספים את הרכב השכור בטרמינל ונוסעים בכביש החוף הנינוח סביב המפרץ אל המלון — כ-25 דקות כשהים לצידכם כל הדרך. אפשר לעצור בטיבט למשקה קר ולהתמתח קודם.</p>
-        <div class="meta-line">🚗 <span>~25 דק׳ · 20 ק״מ לקוטור</span></div>
-        <div class="badgerow"><span class="badge b-drive">🚗 25 דק׳</span><span class="badge b-gentle">כביש חוף שטוח</span></div>
+        <div class="imgwrap tphoto" data-map="Tivat Airport Montenegro"><img loading="lazy" alt="שדה התעופה טיבט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat%20Airport.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">12:00 → 13:00</div><div class="tcat">הגעה</div>
+        <h3>נחיתה בטיבט ואיסוף הרכב</h3>
+        <p>נוחתים בנמל התעופה טיבט (TIV), קטן ונוח, ואוספים את ה-SUV המרווח השכור בטרמינל. כמה דקות לסידור הציוד, ויוצאים לדרך צפונה אל ההרים.</p>
+        <div class="meta-line">🚗 <span>SUV מרווח · נהיגה עצמית</span></div>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Nikšić Montenegro"><img loading="lazy" alt="כביש ההרים דרך ניקשיץ'" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nik%C5%A1i%C4%87.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">13:30 → 15:30</div><div class="tcat">נסיעה צפונה</div>
+        <h3>בכביש החדיש דרך ריסאן וניקשיץ'</h3>
+        <p>נסיעה נעימה בכביש החדש והנוח שעולה מהחוף אל ההרים, דרך ריסאן (Risan) וניקשיץ' (Nikšić). הנוף הולך ונפתח ככל שמטפסים — שדות, אגמים והרים.</p>
+        <div class="meta-line">🚗 <span>~2 שעות · עצירות לפי הצורך</span></div>
+        <div class="badgerow"><span class="badge b-drive">🚗 ~2 שעות</span><span class="badge b-scenic">נופי</span></div>
       </div>
       <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Dobrota Kotor waterfront"><img loading="lazy" alt="טיילת מפרץ קוטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dobrota.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">14:30 → 16:30</div><div class="tcat">ההפוגה הרגועה</div>
-        <h3>צ׳ק-אין ומנוחה</h3>
-        <p>מתמקמים במלון, פורקים מזוודות פעם אחת לשלושה לילות, ולוקחים את אחר-הצהריים בנחת — קפה על המרפסת, רגליים למעלה, אולי ישיבה קצרה ליד המים. בלי תוכניות עד צינון הערב.</p>
-        <div class="badgerow"><span class="badge b-gentle">במלון</span></div>
+        <div class="imgwrap tphoto" data-map="Krupac Lake Nikšić Montenegro"><img loading="lazy" alt="אגם קרופאץ'" src="https://commons.wikimedia.org/wiki/Special:FilePath/Krupac%20Lake.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">15:30 → 16:15</div><div class="tcat">עצירת רענון</div>
+        <h3>קפה מול אגם קרופאץ'</h3>
+        <p>עצירת מנוחה רגועה לקפה מול אגם קרופאץ' (Krupac) — מים שקטים, הרים ברקע, ואוויר הרים צלול. הפסקה מושלמת לפני הקטע האחרון.</p>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span><span class="badge b-scenic">נופי</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Žabljak Montenegro"><img loading="lazy" alt="העיירה ההררית ז'בליאק" src="https://commons.wikimedia.org/wiki/Special:FilePath/%C5%BDabljak.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">16:15 → 17:30</div><div class="tcat">הגעה · צ'ק-אין</div>
+        <h3>הגעה לז'בליאק</h3>
+        <p>נסיעה קצרה אחרונה והגעה לז'בליאק (Žabljak), העיירה הגבוהה ביותר בבלקן ולב הדורמיטור. צ'ק-אין במלון, פריקת מזוודות פעם אחת לארבעה לילות, ומנוחה קצרה.</p>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Kotor Old Town main square"><img loading="lazy" alt="העיר העתיקה של קוטור בין הערביים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%2C%20Montenegro.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">17:30 → 20:00</div><div class="tcat">ערב · ברגל</div>
-        <h3>טיול ראשון בעיר העתיקה של קוטור</h3>
-        <p>הליכה קלה דרך שער הים אל העיר העתיקה המוקפת חומה כשהיום מתקרר — כיכר הנשק, מגדל השעון, סמטאות שיש צרות, וחתולי קוטור המפורסמים. הכול שטוח. בלי טיפוסים הערב; פשוט לשוטט, למצוא מרפסת ולאכול ארוחת ערב ראשונה לאור נרות.</p>
-        <div class="meta-line">📍 <span>העיר העתיקה של קוטור (אונסק״ו)</span></div>
-        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span><span class="badge b-culture">תרבות</span></div>
+        <div class="imgwrap tphoto" data-map="Konoba Badanj Žabljak"><img loading="lazy" alt="תבשיל קדרה בקונובה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Konoba%20dish.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">19:30</div><div class="tcat">ערב</div>
+        <h3>ארוחת ערב חמימה ב-Konoba Badanj</h3>
+        <p>ארוחת ערב ראשונה בבקתת עץ ואבן אותנטית — תבשילי קדרה מעולים, בשרים וגבינות הרים. חניה ממש בחזית, אווירה חמימה לסיום יום הנסיעה.</p>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">איפה לישון — בסיס המפרץ (3 לילות)</span></div>
+    <div class="subhead"><span class="sec-label">איפה לישון — בסיס ההרים (4 לילות)</span></div>
     <div class="cards">
-      <div class="card" data-map="Palazzo Radomiri Hotel Dobrota Kotor" data-book-label="🏨 פרטי הלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Palazzo%20Radomiri%20Hotel%20Dobrota%20Kotor" data-book-note="בוטיק היסטורי · על קו המים · חניה פרטית — מצוין לקבוצה עם רכב">
-        <div class="imgwrap cphoto" data-map="Palazzo Radomiri Hotel Dobrota Kotor"><img loading="lazy" alt="מלון בוטיק על קו המים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dobrota%20Kotor.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">בוטיק · 4★ · על קו המים</span><h4>פלאצו רדומירי (דוברוטה)</h4>
-        <p>ארמון משופץ מהמאה ה-18 ממש על המפרץ צפונית לקוטור, עם בריכה קטנה, מזח וחניה נוחה — שקט יותר מהעיר העתיקה ואידיאלי עם רכב.</p>
-        <div class="addr"><b>דוברוטה, 2 ק״מ מהעיר העתיקה של קוטור</b><br>בוטיק היסטורי · חניה באתר</div>
-        <div class="badgerow"><span class="badge b-gentle">חניה נוחה</span><span class="cost">≈ €150–230 ללילה</span></div>
+      <div class="card" data-map="Hotel Soa Žabljak" data-book-label="🏨 פרטי הלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Hotel%20Soa%20Žabljak" data-book-note="מלון בוטיק נעים בז'בליאק · חניה · קרוב למרכז ולאגם השחור">
+        <div class="imgwrap cphoto" data-map="Hotel Soa Žabljak"><img loading="lazy" alt="מלון הרים בז'בליאק" src="https://commons.wikimedia.org/wiki/Special:FilePath/%C5%BDabljak%20Durmitor.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">בוטיק · הרים</span><h4>Hotel Soa, ז'בליאק</h4>
+        <p>מלון נעים ומודרני בלב ז'בליאק, עם חדרים חמימים, ארוחת בוקר טובה וחניה — בסיס מצוין לארבעה לילות בהרים.</p>
+        <div class="addr"><b>ז'בליאק, מרכז העיירה</b><br>חניה · ארוחת בוקר</div>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
-      <div class="card" data-map="Historic Boutique Hotel Cattaro Kotor Old Town" data-book-label="🏨 פרטי הלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Historic%20Boutique%20Hotel%20Cattaro%20Kotor" data-book-note="בתוך החומות · האווירתי ביותר · חניה ממש מחוץ לעיר העתיקה">
-        <div class="imgwrap cphoto" data-map="Historic Boutique Hotel Cattaro Kotor"><img loading="lazy" alt="מלון בוטיק בעיר העתיקה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%20old%20town.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">בוטיק · 4★ · בעיר העתיקה</span><h4>מלון בוטיק קאטארו</h4>
-        <p>בניין מפואר מהמאה ה-18 ממש על כיכר הנשק — למי שרוצים לצעוד היישר אל תוך העיר העתיקה. (חונים ממש מחוץ לחומות.)</p>
-        <div class="addr"><b>כיכר הנשק, העיר העתיקה של קוטור</b><br>חדרים היסטוריים · ≈ €120–280 ללילה</div>
-        <div class="badgerow"><span class="badge b-culture">בתוך החומות</span><span class="cost">≈ €120–280 ללילה</span></div>
+      <div class="card" data-map="Hotel Polar Star Žabljak" data-book-label="🏨 לעיון בלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Hotel%20Polar%20Star%20Žabljak" data-book-note="חלופה נוחה בז'בליאק · חדרים מרווחים · חניה">
+        <div class="imgwrap cphoto" data-map="Hotel Polar Star Žabljak"><img loading="lazy" alt="מלון חלופי בז'בליאק" src="https://commons.wikimedia.org/wiki/Special:FilePath/Durmitor.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">חלופה · הרים</span><h4>Hotel Polar Star, ז'בליאק</h4>
+        <p>חלופה נוחה ומרווחת בעיירה, אם Soa מלא — חדרים גדולים וחניה, במרחק נסיעה קצר מהאתרים.</p>
+        <div class="addr"><b>ז'בליאק</b><br>חדרים מרווחים · חניה</div>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
     </div>
 
     <div class="subhead"><span class="sec-label">ארוחת הערב</span></div>
     <div class="cards">
-      <div class="card" data-map="Galion Restaurant Kotor" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Galion%20Restaurant%20Kotor" data-book-note="נוף לחומות העיר המוארות · הזמינו שולחן על המרפסת בשקיעה">
-        <div class="imgwrap cphoto" data-map="Galion Restaurant Kotor"><img loading="lazy" alt="דגים על קו המים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20fish.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · עם נוף</span><h4>גליון (Galion)</h4>
-        <p>חלונות מהרצפה עד התקרה ומרפסת המשקיפה אל חומות המבצר המוארות — מטבח ים-תיכוני עכשווי של דגים ופירות ים, פתיחה יפהפייה ללילה הראשון.</p>
-        <div class="addr"><b>Šuranj, ליד המרינה</b><br>ערב · הזמינו את המרפסת</div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="cost">€30–45 לאדם</span></div>
-      </div>
-      <div class="card" data-map="Konoba Cesarica Kotor" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Konoba%20Cesarica%20Kotor" data-book-note="פונדק משפחתי · הבעלים דייג, אז הדג הוא של אותו היום">
-        <div class="imgwrap cphoto" data-map="Konoba Cesarica Kotor"><img loading="lazy" alt="מנה מונטנגרית בפונדק" src="https://commons.wikimedia.org/wiki/Special:FilePath/Black%20risotto.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · חמים ומקומי</span><h4>קונובה צֶסאריצה</h4>
-        <p>פונדק משפחתי חמים בקירות אבן, מוסתר בסמטה של העיר העתיקה — דג טרי יומי, ריזוטו שחור ובישול מונטנגרי ביתי. הבחירה הקלה והאותנטית.</p>
-        <div class="addr"><b>העיר העתיקה של קוטור (מהסמטה הראשית)</b><br>בכל יום · קטן — הזמינו מראש</div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€20–30 לאדם</span></div>
+      <div class="card" data-map="Konoba Badanj Žabljak" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Konoba%20Badanj%20Žabljak" data-book-note="בקתת עץ ואבן · תבשילי קדרה · חניה בחזית">
+        <div class="imgwrap cphoto" data-map="Konoba Badanj Žabljak"><img loading="lazy" alt="קונובה הררית" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20meat.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">ערב · אותנטי</span><h4>Konoba Badanj</h4>
+        <p>בקתת עץ ואבן אותנטית עם תבשילי קדרה מעולים, בשרים וגבינות מקומיות. חמים, ביתי וחניה ממש בכניסה.</p>
+        <div class="addr"><b>ז'בליאק</b><br>בכל יום · הזמינו מראש</div>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€20–32 לאדם</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בקוטור — אומני העיר העתיקה וקניון בקרבת מקום</h4>
-      <p>בטיול הערב, סמטאות העיר העתיקה של קוטור מלאות ב<a href="https://www.google.com/maps/search/?api=1&query=Kotor%20old%20town%20shops%20Montenegro%20wine%20olive%20oil" target="_blank" rel="noopener">חנויות אומן</a> — יין מונטנגרי, שמן זית, פרושוטו מנייגושי ודבש הרים נארזים יפה. ולכל מה ששכחתם, <a href="https://www.google.com/maps/search/?api=1&query=Kamelija%20Shopping%20Center%20Kotor" target="_blank" rel="noopener">קניון קמליה</a> ממש מחוץ לחומות: שטוח, ממוזג ועם חניה.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">ההגעה</span></div>
+    <div class="subhead"><span class="sec-label">בדרך</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚗</span> רכב שכור נאסף בשדה התעופה טיבט — כביש החוף לקוטור שטוח ונופי <span class="price">~25 דק׳</span></li>
-      <li><span class="ico">🅿️</span> חניה במלון (דוברוטה) או במגרש הציבורי ממש מחוץ לחומות קוטור <span class="price">≈ €1–2 לשעה</span></li>
+      <li><span class="ico">🚗</span> טיבט → ז'בליאק דרך ריסאן וניקשיץ' (כביש חדש ונוח) <span class="price">~3.5 שעות כולל עצירות</span></li>
+      <li><span class="ico">☕</span> עצירת קפה מומלצת מול אגם קרופאץ' <span class="price">~45 דק׳</span></li>
     </ul></div>
   </div>
 </article>
@@ -305,75 +296,60 @@
 <!-- DAY 2 -->
 <article class="day" id="day2">
   <div class="banner">
-    <img class="ph" alt="העיר העתיקה של קוטור והקתדרלה"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%20Cathedral.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="האגם השחור בדורמיטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Black%20Lake%20Durmitor.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 02 — שני</span></div>
-      <h2>העיר העתיקה של קוטור, בנחת</h2><div class="when">31 אוג׳ · הכול בתוך החומות · והכול שטוח</div></div>
+      <h2>"עיני ההר" ופסגות פנורמיות</h2><div class="when">31 באוג׳ · אגמים, רכבל ונופי פסגות</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €55 לאדם</b></span><span class="chip">הכול ברגל, הכול שטוח</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">הליכות שטוחות וקצרות</span><span class="chip">נופים ללא מאמץ</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Cathedral of Saint Tryphon Kotor"><img loading="lazy" alt="קתדרלת סן טריפון" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral%20of%20Saint%20Tryphon.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">09:30 → 13:00</div><div class="tcat">בוקר · ברגל</div>
-        <h3>העיר העתיקה בקצב של קתדרלה</h3>
-        <p>בוקר איטי בתוך החומות: קתדרלת סן טריפון הרומנסקית (1166), הכיכרות הקטנות, המוזיאון הימי בארמון בארוקי, ואקווריום בּוֹקה החדש אם בא לכם. אנחנו מוותרים על הטיפוס לחומות העיר — הוא תלול ומיותר; הקסם כולו בגובה הרחוב. עצירות קפה רבות לאורך הדרך.</p>
-        <div class="meta-line">📍 <span>סן טריפון · המוזיאון הימי</span> · 🕒 הבוקר השקט ביותר</div>
-        <div class="badgerow"><span class="badge b-culture">תרבות</span><span class="badge b-gentle">סמטאות שטוחות</span><span class="cost">אתרים €3–6 כל אחד</span></div>
+        <div class="imgwrap tphoto" data-map="Black Lake Crno jezero Durmitor"><img loading="lazy" alt="האגם השחור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Crno%20jezero.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">10:00 → 12:30</div><div class="tcat">בוקר · הליכה קלה</div>
+        <h3>האגם השחור (Crno Jezero)</h3>
+        <p>פנינת הדורמיטור: הליכה של 10 דקות בשביל אספלט שטוח, סלול ומוצל מהחניה עד בתי הקפה שעל המים. אפשר לשבת מול האגם, או להאריך כמה שבא לכם לאורך הגדה — הכול מישורי.</p>
+        <div class="meta-line">🚶 <span>שביל שטוח ומוצל ~10 דק׳</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-foot">🚶 ברגל</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Savin Kuk chairlift Žabljak"><img loading="lazy" alt="רכבל סאבין קוק" src="https://commons.wikimedia.org/wiki/Special:FilePath/Savin%20Kuk.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">13:00 → 14:30</div><div class="tcat">צהריים · רכבל</div>
+        <h3>רכבל המושבים Savin Kuk</h3>
+        <p>נסיעה קצרה ועלייה ברכבל המושבים אל תצפית פסגות מרהיבה — נוף של כל מסיב הדורמיטור, ללא שום מאמץ ברגל. למעלה אפשר לשבת, לצלם וליהנות מהאוויר.</p>
+        <div class="meta-line">🚡 <span>רכבל · ישיבה לכל אורך הדרך</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-gentle">נוח</span></div>
       </div>
       <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Kotor Old Town square café"><img loading="lazy" alt="כיכר שקטה בקוטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%20square.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">14:00 → 16:00</div><div class="tcat">ההפוגה הרגועה</div>
-        <h3>צהריים, ואז חזרה למלון</h3>
-        <p>צהריים נינוחים בעיר העתיקה (למטה), ואז חזרה לבסיס לחלק החם ביותר של היום — מנוחה, הבריכה או המרפסת.</p>
-        <div class="badgerow"><span class="badge b-gentle">5 דק׳ מהבסיס</span></div>
+        <div class="imgwrap tphoto" data-map="Zminje Lake Durmitor"><img loading="lazy" alt="אגם זמיניה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Zminje%20jezero.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">15:00 → 16:30</div><div class="tcat">אחר-צהריים · רגוע</div>
+        <h3>אגם זמיניה (Zminje) הפסטורלי</h3>
+        <p>אגם קטן ושקט בלב היער, פחות מוכר ורומנטי — מקום מושלם לטייל לאט, לשבת על ספסל ולנשום. ואז חזרה למלון למנוחה לפני הערב.</p>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-romantic">💑 רומנטי</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Ladder of Kotor viewpoint road"><img loading="lazy" alt="נוף אל מפרץ קוטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%20Bay%20view.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">16:30 → 19:00</div><div class="tcat">אחר-צהריים · נסיעה קצרה</div>
-        <h3>תצפית על המפרץ ברכב</h3>
-        <p>נסיעה קצרה ורשות בלבד במעלה הסרפנטינות התחתונות לעבר תצפית פסטינגראד, אל המראה הקלאסי על גגות הרעפים האדומים והמפרץ דמוי-הפיורד — אפשר להסתובב ולחזור מתי שתרצו, אין צורך להגיע רחוק. חוזרים אל המים הרבה לפני רדת החשכה.</p>
-        <div class="meta-line">🚗 <span>~15–20 דק׳ במעלה · עוצרים בכל נקודה</span></div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-drive">🚗 פחות מ-20 דק׳</span></div>
-      </div>
-      <div class="tblock night reveal">
-        <div class="imgwrap tphoto" data-map="Old Winery Wine Bar Kotor"><img loading="lazy" alt="בר יין בעיר העתיקה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Red%20Wine%20Glass.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">20:30 →</div><div class="tcat">ערב · ברגל</div>
-        <h3>כוס יין על הכיכר</h3>
-        <p>ארוחת ערב בעיר העתיקה, ואז כוס אדום מונטנגרי (וְרָנָץ) בבר היין Old Winery, שבו פסנתרן מנגן ברכות בחצר שקטה. שתי דקות הליכה ולילה נינוח.</p>
-        <div class="meta-line">📍 <span>העיר העתיקה של קוטור</span></div>
-        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span><span class="badge b-food">אוכל ויין</span></div>
+        <div class="imgwrap tphoto" data-map="Restoran Oro Žabljak"><img loading="lazy" alt="מסעדת בקתה בז'בליאק" src="https://commons.wikimedia.org/wiki/Special:FilePath/Balkan%20food.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">19:30</div><div class="tcat">ערב</div>
+        <h3>ארוחת ערב ב-Restoran Oro</h3>
+        <p>מסעדת בקתה מרווחת מאוד בלב העיירה — תפריט בלקני ומערבי, מנות גדולות וכניסה נוחה ושטוחה. אווירה נינוחה לערב הררי.</p>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">איפה לאכול היום</span></div>
+    <div class="subhead"><span class="sec-label">ארוחת הערב</span></div>
     <div class="cards">
-      <div class="card" data-map="Restaurant Pržun Kotor" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Restaurant%20Przun%20Kotor%20old%20town" data-book-note="פנינה נסתרת בסמטה · מטבח מונטנגרי מסורתי ועונתי">
-        <div class="imgwrap cphoto" data-map="Restaurant Pržun Kotor"><img loading="lazy" alt="פרושוטו וגבינה מנייגושי" src="https://commons.wikimedia.org/wiki/Special:FilePath/Prosciutto%20and%20cheese.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">צהריים · מסורתי</span><h4>מסעדת פְּרְזׄוּן</h4>
-        <p>מועדף שקט בסמטה צדדית — פרושוטו וגבינה מנייגושי, עגל צלוי, ברודֶט דגים. מתכונים מסורתיים שנעשים היטב.</p>
-        <div class="addr"><b>העיר העתיקה של קוטור</b><br>בכל יום · אינטימי, הזמינו מראש</div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€20–32 לאדם</span></div>
-      </div>
-      <div class="card" data-map="Trpeza Restaurant Kotor" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Trpeza%20Restaurant%20Kotor" data-book-note="'השולחן' — מטבח מורשת מונטנגרי במגע מודרני">
-        <div class="imgwrap cphoto" data-map="Trpeza Restaurant Kotor"><img loading="lazy" alt="מנה מונטנגרית מוגשת" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seafood%20platter.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · מקומי-מוקפד</span><h4>טְרְפֶּזָה</h4>
-        <p>"השולחן" במונטנגרית — מנות מורשת בטוויסט יצירתי ומודרני, באווירת עיר עתיקה נינוחה. רמה אחת מעלה בלי להתאמץ.</p>
-        <div class="addr"><b>העיר העתיקה של קוטור</b><br>בכל יום · הזמינו שולחן ל-4</div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€22–35 לאדם</span></div>
+      <div class="card" data-map="Restoran Oro Žabljak" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Restoran%20Oro%20Žabljak" data-book-note="בקתה מרווחת · אוכל בלקני ומערבי · כניסה שטוחה ונוחה">
+        <div class="imgwrap cphoto" data-map="Restoran Oro Žabljak"><img loading="lazy" alt="מנה בלקנית" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20meat.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">ערב · בלקני-מערבי</span><h4>Restoran Oro</h4>
+        <p>בקתה גדולה ונעימה במרכז ז'בליאק עם תפריט מגוון, מנות נדיבות וכניסה נוחה — קל לכולם.</p>
+        <div class="addr"><b>ז'בליאק, מרכז</b><br>בכל יום · מרווח</div>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€18–30 לאדם</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בקוטור — בוטיקים, תכשיטים ומזכרות</h4>
-      <p>השיטוט הבוקר בעיר העתיקה עובר על פני <a href="https://www.google.com/maps/search/?api=1&query=Kotor%20old%20town%20boutiques%20jewellery" target="_blank" rel="noopener">בוטיקי אופנה, תכשיטים וחנויות מזכרות</a>. בחום הצהריים, קניון <a href="https://www.google.com/maps/search/?api=1&query=Kamelija%20Shopping%20Center%20Kotor" target="_blank" rel="noopener">קמליה</a> השטוח והממוזג (מותגים בינלאומיים ומתחם מזון) הוא הפוגה קלה.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">תחבורה מקומית</span></div>
+    <div class="subhead"><span class="sec-label">איך מתניידים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚶</span> כל היום ברגל בתוך החומות — סמטאות שיש שטוחות <span class="price">חינם</span></li>
-      <li><span class="ico">🚗</span> נסיעת ערב קצרה ורשות לתצפית, ואז חזרה אל המים <span class="price">~20 דק׳</span></li>
+      <li><span class="ico">🚗</span> כל האתרים דקות נסיעה קצרות מז'בליאק <span class="price">5–15 דק׳</span></li>
+      <li><span class="ico">🚡</span> רכבל Savin Kuk — בדקו שעות פעילות מראש <span class="price">≈ €10–15 לאדם</span></li>
     </ul></div>
   </div>
 </article>
@@ -381,68 +357,59 @@
 <!-- DAY 3 -->
 <article class="day" id="day3">
   <div class="banner">
-    <img class="ph" alt="האי 'גבירתנו של הסלעים' מול פראסט"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Our%20Lady%20of%20the%20Rocks.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="גשר טארה מעל הקניון" src="https://commons.wikimedia.org/wiki/Special:FilePath/%C4%90ur%C4%91evi%C4%87a%20Tara%20Bridge.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 03 — שלישי</span></div>
-      <h2>פראסט ו'גבירתנו של הסלעים'</h2><div class="when">1 ספט׳ · כפר בארוקי וכנסייה על אי</div></div>
+      <h2>קניון טארה העמוק וגשר הקשתות</h2><div class="when">1 בספט׳ · תצפיות, גשר וארוחת פורל</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €55 לאדם</b></span><span class="chip">סירה בישיבה · עלייה נוחה</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">תצפיות וגשר שטוח</span><span class="chip">ארוחת דגים על הנהר</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Perast Montenegro waterfront"><img loading="lazy" alt="טיילת פראסט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Perast.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">09:30 → 13:00</div><div class="tcat">בוקר · נסיעה קצרה + סירה</div>
-        <h3>פראסט, והסירה אל האי</h3>
-        <p>נסיעה של 15 דקות לאורך המפרץ אל פראסט הקטנה — רחוב בארוקי יחיד של ארמונות וכנסיות, ללא תנועה ושטוח לחלוטין. מהטיילת יוצאת סירה קטנה אל 'גבירתנו של הסלעים', האי המלאכותי עם הכנסייה כחולת הכיפה; ההפלגה כעשר דקות, הסירה עוגנת ממש ליד הדלת, והעלייה נוחה ובישיבה — קל לכולם. אחר כך קפה איטי על טיילת פראסט.</p>
-        <div class="meta-line">🚗 <span>~15 דק׳ לפראסט</span> · ⛴ <span>10 דק׳ סירה לכל כיוון</span></div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-gentle">סירה בישיבה</span><span class="cost">סירה ≈ €5 לאדם הלוך-חזור</span></div>
+        <div class="imgwrap tphoto" data-map="Ćurevac viewpoint Tara Canyon Durmitor"><img loading="lazy" alt="תצפית צ'ורבאץ' אל קניון טארה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tara%20Canyon.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">10:00 → 11:30</div><div class="tcat">בוקר · תצפית</div>
+        <h3>תצפית צ'ורבאץ' (Ćurevac)</h3>
+        <p>נסיעה קצרה אל תצפית דרמטית ישירות אל עומק קניון טארה — הקניון השני בעומקו בעולם. מבט עוצר נשימה, ממש מקצה התצפית, בלי טיפוס.</p>
+        <div class="meta-line">📸 <span>תצפית עם הליכה קצרה</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Đurđevića Tara Bridge"><img loading="lazy" alt="גשר דורדביצ'ה טארה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tara%20Bridge.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">12:00 → 13:30</div><div class="tcat">בוקר · גשר</div>
+        <h3>גשר דורדביצ'ה (Đurđevića Tara)</h3>
+        <p>גשר הקשתות המפורסם מעל התהום. הליכה מישורית, קלה ורחבה על הגשר — נוף מרהיב לקניון ולנהר הטורקיז שמתחת, בלי שום מאמץ.</p>
+        <div class="meta-line">🚶 <span>הליכה שטוחה ורחבה על הגשר</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-foot">🚶 ברגל</span></div>
       </div>
       <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Perast Montenegro"><img loading="lazy" alt="בתי אבן בפראסט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Perast%20town.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">14:00 → 16:00</div><div class="tcat">ההפוגה הרגועה</div>
-        <h3>צהריים בפראסט, ואז חזרה למנוחה</h3>
-        <p>צהריים על מרפסת בפראסט מעל המים (למטה), ואז הנסיעה הקצרה חזרה למלון למנוחת אחר-הצהריים.</p>
-        <div class="badgerow"><span class="badge b-gentle">15 דק׳ חזרה לבסיס</span></div>
+        <div class="imgwrap tphoto" data-map="Restoran Most Đurđevića Tara Bridge"><img loading="lazy" alt="דגי פורל על הנהר" src="https://commons.wikimedia.org/wiki/Special:FilePath/Trout%20dish.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">13:30 → 15:30</div><div class="tcat">צהריים · על הנהר</div>
+        <h3>ארוחת צהריים ב-Restoran Most</h3>
+        <p>צמוד לגשר — דגי פורל טריים מהנהר, מרפסת עם נוף מדהים, וחניה שטוחה וצמודה. ארוחת צהריים ארוכה ונינוחה, גם מנוחת היום.</p>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="badge b-scenic">נופי</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Dobrota seafront promenade Kotor"><img loading="lazy" alt="טיילת המפרץ בערב" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%20bay%20evening.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">17:30 → 20:30</div><div class="tcat">ערב · ברגל</div>
-        <h3>טיילת המפרץ וארוחת ערב</h3>
-        <p>טיול ערב נינוח לאורך טיילת דוברוטה — שטוחה, מרוצפת וצמודה למים, כשהמפרץ חלק כזכוכית בשעת הזהב — ואז ארוחת ערב בקרבת מקום. סיום עדין לזמנכם במפרץ.</p>
-        <div class="meta-line">📍 <span>טיילת דוברוטה</span></div>
-        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span><span class="badge b-scenic">נופי</span></div>
+        <div class="imgwrap tphoto" data-map="Žabljak Montenegro"><img loading="lazy" alt="ערב רגוע בז'בליאק" src="https://commons.wikimedia.org/wiki/Special:FilePath/%C5%BDabljak.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">16:00</div><div class="tcat">אחר-צהריים · מנוחה</div>
+        <h3>חזרה למלון וזמן חופשי</h3>
+        <p>חזרה נינוחה לז'בליאק למנוחה וזמן חופשי — קפה, ספר על המרפסת, או טיול קצר בעיירה. ארוחת ערב לפי בחירה (Badanj או Oro).</p>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">איפה לאכול היום</span></div>
+    <div class="subhead"><span class="sec-label">ארוחת הצהריים</span></div>
     <div class="cards">
-      <div class="card" data-map="Conte Restaurant Perast" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Conte%20Restaurant%20Perast" data-book-note="ממש על טיילת פראסט · דגים עם נוף לאיים">
-        <div class="imgwrap cphoto" data-map="Conte Restaurant Perast"><img loading="lazy" alt="מרפסת דגים בפראסט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20seafood.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">צהריים · על קו המים</span><h4>קונטה (Conte, פראסט)</h4>
-        <p>מרפסת רומנטית בקצה המים המשקיפה אל שני האיים — דג טרי, ריזוטו וצהריים ארוכים ועצלים בשמש.</p>
-        <div class="addr"><b>טיילת פראסט</b><br>בכל יום · מקסים בצהריים</div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="cost">€25–40 לאדם</span></div>
-      </div>
-      <div class="card" data-map="Restaurant Stari Mlini Ljuta Kotor" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Stari%20Mlini%20restaurant%20Ljuta%20Kotor" data-book-note="טחנה עתיקה ליד מעיין על כביש המפרץ · קלאסיקה של בוקה">
-        <div class="imgwrap cphoto" data-map="Stari Mlini Ljuta Kotor"><img loading="lazy" alt="מסעדה על קו המים במפרץ" src="https://commons.wikimedia.org/wiki/Special:FilePath/Fish%20dinner.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · מיוחד</span><h4>סטארי מליני (ליוטה)</h4>
-        <p>טחנה עתיקה משופצת לצד מעיין מים מתוקים על כביש המפרץ בין קוטור לפראסט — גנים, מים ופירות ים מצוינים. ערב נינוח ובלתי נשכח (נסיעה קצרה, או שמרו למסלול של מחר).</p>
-        <div class="addr"><b>ליוטה, על כביש המפרץ</b><br>בכל יום · הזמינו מראש</div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€30–45 לאדם</span></div>
+      <div class="card" data-map="Restoran Most Đurđevića Tara Bridge" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Restoran%20Most%20Tara%20Bridge" data-book-note="צמוד לגשר טארה · פורל טרי · מרפסת נוף · חניה צמודה">
+        <div class="imgwrap cphoto" data-map="Restoran Most Tara Bridge"><img loading="lazy" alt="פורל טרי מהנהר" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20fish.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">צהריים · על הנהר</span><h4>Restoran Most</h4>
+        <p>ממש ליד גשר טארה — דגי פורל טריים, מרפסת עם נוף לקניון, וחניה שטוחה וצמודה. נוח ומרהיב.</p>
+        <div class="addr"><b>גשר דורדביצ'ה טארה</b><br>בכל יום · מרפסת נוף</div>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€18–28 לאדם</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בפראסט ובקוטור — חנויות קטנות ותוצרת מקומית</h4>
-      <p>בפראסט יש כמה <a href="https://www.google.com/maps/search/?api=1&query=Perast%20Montenegro%20souvenir%20shop" target="_blank" rel="noopener">חנויות אומן ומזכרות</a> קטנות לאורך הרחוב היחיד. בחזרה בקוטור, חנויות העיר העתיקה וקניון <a href="https://www.google.com/maps/search/?api=1&query=Kamelija%20Shopping%20Center%20Kotor" target="_blank" rel="noopener">קמליה</a> דקות מהבסיס לקניות האחרונות במפרץ.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">איך מגיעים</span></div>
+    <div class="subhead"><span class="sec-label">איך מתניידים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚗</span> מקוטור לפראסט לאורך המפרץ (שטוח, מרהיב) <span class="price">~15 דק׳</span></li>
-      <li><span class="ico">⛴</span> מפראסט אל 'גבירתנו של הסלעים' — סירה קטנה, בישיבה, עוגנת ליד הדלת <span class="price">≈ €5 לאדם</span></li>
-      <li><span class="ico">🅿️</span> חניה בכניסה לפראסט (הכפר נטול-רכב) והליכה ברחוב השטוח <span class="price">≈ €3–5</span></li>
+      <li><span class="ico">🚗</span> ז'בליאק → תצפית צ'ורבאץ' → גשר טארה (קצר ונופי) <span class="price">~20–40 דק׳</span></li>
     </ul></div>
   </div>
 </article>
@@ -450,86 +417,49 @@
 <!-- DAY 4 -->
 <article class="day" id="day4">
   <div class="banner">
-    <img class="ph" alt="העיר העתיקה של בודבה והאדריאטי"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="יער ואגם ביוגרדסקה גורה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Biogradska%20Gora.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 04 — רביעי</span></div>
-      <h2>מעבר לריביירה — בודבה</h2><div class="when">2 ספט׳ · מחליפים בסיס (3 לילות) · העיר המוקפת חומה לצד הים</div></div>
+      <h2>יער הגשם ואגם ביוגרדסקה</h2><div class="when">2 בספט׳ · יום אחרון בהרים · יער עתיק ואגם</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €60 לאדם</b></span><span class="chip">החלפת מלון אחת · נסיעה קצרה</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">דק עץ שטוח סביב האגם</span><span class="chip">אווירת הרים אחרונה</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Tivat to Budva coast road"><img loading="lazy" alt="כביש החוף של האדריאטי" src="https://commons.wikimedia.org/wiki/Special:FilePath/Montenegro%20coast.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">10:00 → 12:00</div><div class="tcat">בוקר · נסיעה</div>
-        <h3>מקוטור לבודבה, בדרך הנופית</h3>
-        <p>ארוחת בוקר מאוחרת ונינוחה, ואז הנסיעה דרומה אל הריביירה של בודבה — כ-40 דקות. אנחנו מפצלים את הדרך באמצע (עצירת קפה ליד טיבט או תצפית מהירה על המפרץ) כך שהרכב לעולם אינו בתנועה יותר משעה ברציפות. צ׳ק-אין לבסיס החדש; משאירים את התיקים.</p>
-        <div class="meta-line">🚗 <span>~40 דק׳ · עצירה אחת באמצע</span></div>
-        <div class="badgerow"><span class="badge b-drive">🚗 40 דק׳</span><span class="badge b-scenic">נופי</span></div>
+        <div class="imgwrap tphoto" data-map="Biogradska Gora National Park"><img loading="lazy" alt="הדרך לביוגרדסקה גורה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Biogradska%20gora.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">09:30 → 11:00</div><div class="tcat">בוקר · נסיעה נופית</div>
+        <h3>נסיעה אל ביוגרדסקה גורה</h3>
+        <p>נסיעה נופית מזרחה, כשעה ורבע, אל שמורת ביוגרדסקה גורה — אחד מיערות העד האחרונים באירופה. הרכב מגיע ממש עד שפת המים, בלי הליכה ארוכה.</p>
+        <div class="meta-line">🚗 <span>~1 שעה ורבע · נופי</span></div>
+        <div class="badgerow"><span class="badge b-drive">🚗 ~75 דק׳</span><span class="badge b-scenic">נופי</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Biogradsko Lake Montenegro"><img loading="lazy" alt="דק עץ סביב אגם ביוגרדסקו" src="https://commons.wikimedia.org/wiki/Special:FilePath/Biogradsko%20jezero.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">11:00 → 14:00</div><div class="tcat">צהריים · אגם</div>
+        <h3>דק העץ סביב האגם, או שיט משוטים</h3>
+        <p>הליכה רומנטית וקלה על דק העץ השטוח שמקיף את האגם, מתחת לעצים עתיקים — או שיט רגוע בסירת משוטים על המים השקטים. ארוחה קלה לצד האגם.</p>
+        <div class="meta-line">🚶 <span>דק עץ שטוח · 🚣 סירת משוטים אופציונלית</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-romantic">💑 רומנטי</span><span class="badge b-foot">🚶 ברגל</span></div>
       </div>
       <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Sveti Stefan Montenegro"><img loading="lazy" alt="מרפסת מלון בריביירה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sveti%20Stefan.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">14:00 → 16:00</div><div class="tcat">ההפוגה הרגועה</div>
-        <h3>התמקמות ומנוחה</h3>
-        <p>פורקים מזוודות לשלושה לילות, צהריים ליד המלון, ומנוחה לאורך אחר-הצהריים החם — בריכה, מרפסת, או שעה שקטה עם הים בנוף.</p>
-        <div class="badgerow"><span class="badge b-gentle">במלון</span></div>
+        <div class="imgwrap tphoto" data-map="Mojkovac Montenegro"><img loading="lazy" alt="העיירה מויקובץ'" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mojkovac.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">14:30</div><div class="tcat">אחר-צהריים · עצירה</div>
+        <h3>קפה במויקובץ' (Mojkovac)</h3>
+        <p>עצירה לקפה וארוחה קלה בעיירה הציורית מויקובץ' בדרך חזרה — הפסקה נעימה לפני המקטע האחרון.</p>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Budva Old Town"><img loading="lazy" alt="סמטאות העיר העתיקה של בודבה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20old%20town.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">17:30 → 20:30</div><div class="tcat">ערב · ברגל</div>
-        <h3>העיר העתיקה של בודבה בשעת הזהב</h3>
-        <p>קפיצה קצרה אל העיר העתיקה המוקפת חומה של בודבה — קומפקטית, שטוחה ומקסימה באור הערב: המרינה, המצודה מבחוץ, הכנסיות הקטנות של סנטה מריה והשילוש הקדוש, וסמטאות מלאות חנויות. שיטוט נינוח, ואז ארוחת ערב לצד הים.</p>
-        <div class="meta-line">📍 <span>העיר העתיקה של בודבה</span></div>
-        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span><span class="badge b-culture">תרבות</span><span class="badge b-shop">קניות</span></div>
+        <div class="imgwrap tphoto" data-map="Žabljak Montenegro"><img loading="lazy" alt="ערב אחרון בהרים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Durmitor%20National%20Park.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">17:00</div><div class="tcat">ערב · אווירת הרים</div>
+        <h3>חזרה לז'בליאק לערב אחרון</h3>
+        <p>חזרה לז'בליאק לערב אחרון באווירת ההרים הנעימה — ארוחת ערב מקומית ומנוחה לפני המעבר לחוף מחר.</p>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">איפה לישון — בסיס הריביירה (3 לילות)</span></div>
-    <div class="cards">
-      <div class="card" data-map="Villa Geba Boutique Hotel Sveti Stefan" data-book-label="🏨 פרטי הלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Villa%20Geba%20Boutique%20Hotel%20Sveti%20Stefan" data-book-note="סוויטות עם נוף לסבטי סטפן · מסעדה משלו (MUSE) · צעדים מהחוף">
-        <div class="imgwrap cphoto" data-map="Villa Geba Sveti Stefan"><img loading="lazy" alt="סוויטת בוטיק עם נוף לים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sveti%20Stefan%20view.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">בוטיק · סוויטות · נוף לים</span><h4>וילה גֶבָּה (סבטי סטפן)</h4>
-        <p>שמונה סוויטות מעוצבות בנפרד המשקיפות היישר אל האי סבטי סטפן, עם מסעדת MUSE המוערכת באתר והחוף כמה צעדים למטה. שקט ומיוחד.</p>
-        <div class="addr"><b>סבטי סטפן, מעל החוף</b><br>בוטיק · אוכל וחניה באתר</div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="cost">≈ €180–300 ללילה</span></div>
-      </div>
-      <div class="card" data-map="Boutique Hotel Shell Rafailovici Budva" data-book-label="🏨 פרטי הלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Boutique%20Hotel%20Shell%20Rafailovici%20Budva" data-book-note="צעדים מהחוף · מסעדה, בר וחניה פרטית">
-        <div class="imgwrap cphoto" data-map="Rafailovici beach Budva"><img loading="lazy" alt="מלון בוטיק לחוף הים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rafailovici.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">בוטיק · 4★ · לחוף הים</span><h4>מלון בוטיק שֶל (Shell)</h4>
-        <p>בוטיק נינוח על קו החוף ממש דרומית לבודבה ברפאילוביצ׳י, עם מסעדה וחניה משלו — כמה צעדים מהחול ומטיילת הים.</p>
-        <div class="addr"><b>רפאילוביצ׳י, ליד בודבה</b><br>מסעדה · בר · חניה</div>
-        <div class="badgerow"><span class="badge b-gentle">שטוח ולחוף</span><span class="cost">≈ €120–200 ללילה</span></div>
-      </div>
-    </div>
-
-    <div class="subhead"><span class="sec-label">ארוחת הערב</span></div>
-    <div class="cards">
-      <div class="card" data-map="Jadran kod Krsta restaurant Budva" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Jadran%20kod%20Krsta%20Budva" data-book-note="קלאסיקה על טיילת בודבה מאז שנות ה-70 · תפריט דגים גדול">
-        <div class="imgwrap cphoto" data-map="Jadran kod Krsta Budva"><img loading="lazy" alt="מסעדת דגים על קו המים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20fish%20plate.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · קלאסיקה על הים</span><h4>יאדראן קוד קרסטה</h4>
-        <p>מוסד ותיק על טיילת בודבה מתחת לחומות העיר העתיקה — דג טרי ובשרים בנדיבות, ממש ליד המים.</p>
-        <div class="addr"><b>טיילת בודבה, ליד העיר העתיקה</b><br>בכל יום · מרפסת גדולה</div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€22–38 לאדם</span></div>
-      </div>
-      <div class="card" data-map="Restaurant Porat Budva" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=restaurant%20Budva%20old%20town%20seafood" data-book-note="שפע מרפסות דגים נינוחות סביב המרינה והעיר העתיקה">
-        <div class="imgwrap cphoto" data-map="Budva marina restaurants"><img loading="lazy" alt="אוכל במרינה של בודבה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20marina.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · מרינה</span><h4>במרינה של בודבה</h4>
-        <p>אם בא לכם להישאר ליד הסירות, שולי המרינה והעיר העתיקה משופעים מרפסות דגים נינוחות — הליכה קלה ובחירה קלה.</p>
-        <div class="addr"><b>מרינה / עיר עתיקה, בודבה</b><br>בכל יום · בחרו מרפסת</div>
-        <div class="badgerow"><span class="badge b-gentle">שטוח ומרכזי</span><span class="cost">€20–35 לאדם</span></div>
-      </div>
-    </div>
-
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בבודבה — סמטאות העיר העתיקה ו-TQ Plaza</h4>
-      <p>טיול הערב בעיר העתיקה עובר היישר דרך <a href="https://www.google.com/maps/search/?api=1&query=Budva%20old%20town%20shops" target="_blank" rel="noopener">בוטיקים וחנויות מזכרות</a>. למותגים תחת קורת גג אחת, <a href="https://www.google.com/maps/search/?api=1&query=TQ%20Plaza%20Budva" target="_blank" rel="noopener">TQ Plaza</a> הוא הקניון המודרני של בודבה — מותגים עולמיים, קוסמטיקה, קולנוע וחניה, פתוח כל יום 9:00–22:00.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">איך מגיעים</span></div>
+    <div class="subhead"><span class="sec-label">איך מתניידים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚗</span> מקוטור לבודבה, עם עצירה אחת באמצע <span class="price">~40 דק׳</span></li>
-      <li><span class="ico">⚠️</span> עבודות כביש בקיץ (מנהרת וְרְמָץ) עלולות להאט את הקטע — צאו רגועים, לא בלחץ <span class="price">תכננו מרווח</span></li>
-      <li><span class="ico">🅿️</span> חניה במלון; לעיר העתיקה של בודבה יש שפע ממש מחוץ לחומות <span class="price">≈ €1–2 לשעה</span></li>
+      <li><span class="ico">🚗</span> ז'בליאק → ביוגרדסקה גורה (הלוך) <span class="price">~1 שעה ורבע</span></li>
+      <li><span class="ico">🚣</span> סירת משוטים על האגם — אופציונלי, לפי מזג האוויר <span class="price">תשלום במקום</span></li>
     </ul></div>
   </div>
 </article>
@@ -537,67 +467,66 @@
 <!-- DAY 5 -->
 <article class="day" id="day5">
   <div class="banner">
-    <img class="ph" alt="האי סבטי סטפן והריביירה"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Sveti%20Stefan%20island.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="האי סווטי סטפן" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sveti%20Stefan.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 05 — חמישי</span></div>
-      <h2>סבטי סטפן והריביירה</h2><div class="when">3 ספט׳ · חופים ורודים, פארק מלכותי וכפר דייגים</div></div>
+      <h2>מעבר לחוף והאי האייקוני</h2><div class="when">3 בספט׳ · מעבר בסיס לחוף (4 לילות) · צטינייה וסווטי סטפן</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €50 לאדם</b></span><span class="chip">קטעים קצרים · הליכות מוצלות</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">החלפת מלון אחת · נסיעה נופית</span><span class="chip">שקיעה רומנטית</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Milocer Park Sveti Stefan"><img loading="lazy" alt="פארק מילוצ׳ר, אורנים מול הים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Milocer.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">10:00 → 13:00</div><div class="tcat">בוקר · הליכה קלה</div>
-        <h3>פארק מילוצ׳ר והנוף אל סבטי סטפן</h3>
-        <p>קודם הנוף המפורסם — תצפית הכביש אל האי הוורוד סבטי סטפן (האי-מלון עצמו סגור, אז צופים בו מבחוץ, וזו ממילא הזווית הטובה ביותר). אחר כך טיול שטוח ומוצל בפארק מילוצ׳ר, אדמות הקיץ המלכותיות הישנות: חורשות אורן וזית, חוף המלכה, ונוף לים כל הדרך. כמה שבא לכם, ולא צעד מעבר.</p>
-        <div class="meta-line">🚗 <span>~10 דק׳ מבודבה</span> · 📍 <span>מילוצ׳ר / חוף המלכה</span></div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-gentle">שטוח ומוצל</span></div>
+        <div class="imgwrap tphoto" data-map="Žabljak to coast scenic road Montenegro"><img loading="lazy" alt="ירידה מההרים לחוף" src="https://commons.wikimedia.org/wiki/Special:FilePath/Montenegro%20landscape.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">09:30</div><div class="tcat">בוקר · נסיעה דרומה</div>
+        <h3>צ'ק-אאוט וירידה אל החוף</h3>
+        <p>צ'ק-אאוט בז'בליאק ותחילת נסיעה נופית דרומה — מההרים אל ים האדריאטי. עוצרים בדרך לפי הצורך.</p>
+        <div class="badgerow"><span class="badge b-drive">🚗 נסיעה</span><span class="badge b-scenic">נופי</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Cetinje Montenegro old royal capital"><img loading="lazy" alt="צטינייה הבירה המלכותית" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cetinje.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">11:30 → 13:30</div><div class="tcat">צהריים · תרבות</div>
+        <h3>צטינייה (Cetinje) הבירה ההיסטורית</h3>
+        <p>עצירה בבירה המלכותית הישנה — סיור נינוח במדרחוב המלכותי, השטוח והרחב, המוקף ארמונות ושגרירויות עתיקות. שטוח, נעים ומלא היסטוריה, עם בתי קפה לעצירה.</p>
+        <div class="meta-line">🚶 <span>מדרחוב שטוח ורחב</span></div>
+        <div class="badgerow"><span class="badge b-culture">תרבות</span><span class="badge b-gentle">נוח</span></div>
       </div>
       <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Pržno Budva fishing village"><img loading="lazy" alt="מפרצון הדייגים פרזׄנו" src="https://commons.wikimedia.org/wiki/Special:FilePath/Przno.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">14:00 → 16:00</div><div class="tcat">ההפוגה הרגועה</div>
-        <h3>צהריים בפרזׄנו, ואז מנוחה</h3>
-        <p>צהריים של דגים במפרצון הדייגים פרזׄנו ממש לצד הפארק (למטה), ואז חזרה למלון למנוחה מחום אחר-הצהריים.</p>
-        <div class="badgerow"><span class="badge b-gentle">10 דק׳ לבסיס</span></div>
+        <div class="imgwrap tphoto" data-map="Budva Montenegro"><img loading="lazy" alt="מלון על החוף" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">14:30</div><div class="tcat">ההפוגה הרגועה</div>
+        <h3>הגעה למלון בחוף ומנוחה</h3>
+        <p>הגעה למלון באזור החוף (בודבה או פטרובאץ'), צ'ק-אין ומנוחה — פריקת מזוודות לארבעה לילות אחרונים והתרעננות לפני הערב.</p>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Petrovac Montenegro promenade"><img loading="lazy" alt="העיירה החופית פטרובץ" src="https://commons.wikimedia.org/wiki/Special:FilePath/Petrovac%20Montenegro.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">17:30 → 20:30</div><div class="tcat">ערב · נסיעה קצרה + ברגל</div>
-        <h3>טיילת פטרובץ בין הערביים</h3>
-        <p>נסיעה של 20 דקות דרומה לפטרובץ, עיירת חוף קטנה ועדינה יותר עם טיילת עטורת דקלים, מצודה ונציאנית קטנה על הסלעים וחוף רגוע. חונים פעם אחת ומשוטטים בטיילת השטוחה, ואז ארוחת ערב כשהרגליים כמעט בים.</p>
-        <div class="meta-line">🚗 <span>~20 דק׳ דרומה</span></div>
-        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span><span class="badge b-scenic">נופי</span></div>
+        <div class="imgwrap tphoto" data-map="Sveti Stefan viewpoint Montenegro"><img loading="lazy" alt="סווטי סטפן בשקיעה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sveti%20Stefan%20island.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">18:00</div><div class="tcat">ערב · רומנטי</div>
+        <h3>שקיעה מול סווטי סטפן + ארוחת ערב</h3>
+        <p>נסיעה קצרה לנקודת התצפית על האי האייקוני סווטי סטפן בשעת השקיעה — הזווית הכי יפה (האי-מלון סגור, צופים מבחוץ). ואז ארוחת ערב רומנטית מול גלי הים.</p>
+        <div class="meta-line">📍 <span>תצפית סווטי סטפן · ממש מהכביש</span></div>
+        <div class="badgerow"><span class="badge b-romantic">💑 רומנטי</span><span class="badge b-scenic">נופי</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">איפה לאכול היום</span></div>
+    <div class="subhead"><span class="sec-label">איפה לישון — בסיס החוף (4 לילות)</span></div>
     <div class="cards">
-      <div class="card" data-map="Paštrovića Dvori restaurant Sveti Stefan" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Pastrovica%20Dvori%20restaurant%20Sveti%20Stefan" data-book-note="קונובת אבן במדרון עם נוף לאי · מסורתי ואהוב">
-        <div class="imgwrap cphoto" data-map="Pastrovica Dvori Sveti Stefan"><img loading="lazy" alt="קונובת אבן עם נוף" src="https://commons.wikimedia.org/wiki/Special:FilePath/Konoba%20dish.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">צהריים · מסורתי, עם נוף</span><h4>פּשׁטרוביצ׳ה דבורי</h4>
-        <p>בית אבן יפה בגבעות מעל סבטי סטפן עם תוצרת גן משלו וכבש, גבינה ופרושוטו — ומרפסת המשקיפה למטה אל האי.</p>
-        <div class="addr"><b>מעל סבטי סטפן</b><br>בכל יום · הזמינו שולחן עם נוף</div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="badge b-scenic">נופי</span><span class="cost">€25–38 לאדם</span></div>
+      <div class="card" data-map="Hotel Šajo Budva" data-book-label="🏨 פרטי הלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Hotel%20Šajo%20Budva" data-book-note="מלון נעים בבודבה · בריכה · קרוב לעיר העתיקה ולחוף">
+        <div class="imgwrap cphoto" data-map="Hotel Šajo Budva"><img loading="lazy" alt="מלון בבודבה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20Montenegro.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">חוף · בודבה</span><h4>Hotel Šajo, בודבה</h4>
+        <p>מלון נעים בבודבה עם בריכה וחניה, במרחק קצר מהעיר העתיקה ומהחוף — בסיס נוח לחלק השני.</p>
+        <div class="addr"><b>בודבה</b><br>בריכה · חניה</div>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
-      <div class="card" data-map="Pržno beach restaurants Budva" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Przno%20beach%20restaurant%20Budva%20seafood" data-book-note="פונדקי דגים ממש על מפרצון פרזׄנו">
-        <div class="imgwrap cphoto" data-map="Przno cove Budva"><img loading="lazy" alt="צהריים של דגים ליד המפרצון" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seafood%20lunch.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">צהריים · על קו המים</span><h4>פונדקי מפרצון פרזׄנו</h4>
-        <p>מפרצון הדייגים שלצד מילוצ׳ר מוקף פונדקי דגים פשוטים ומצוינים — שולחנות כמעט על החלוקים. מושלם אחרי הטיול בפארק.</p>
-        <div class="addr"><b>פרזׄנו, ליד מילוצ׳ר</b><br>בכל יום · קז׳ואל</div>
-        <div class="badgerow"><span class="badge b-gentle">לחוף הים</span><span class="cost">€18–30 לאדם</span></div>
+      <div class="card" data-map="Villa Oliva Petrovac" data-book-label="🏨 לעיון בלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Villa%20Oliva%20Petrovac%20Montenegro" data-book-note="חלופה שקטה בפטרובאץ' · קרוב לטיילת והחוף">
+        <div class="imgwrap cphoto" data-map="Petrovac Montenegro"><img loading="lazy" alt="פטרובאץ' על החוף" src="https://commons.wikimedia.org/wiki/Special:FilePath/Petrovac%20Montenegro.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">חוף · פטרובאץ'</span><h4>Villa Oliva, פטרובאץ'</h4>
+        <p>חלופה שקטה ורומנטית יותר בפטרובאץ' — עיירת חוף קטנה ועדינה עם טיילת נעימה, אם תעדיפו אווירה רגועה מבודבה.</p>
+        <div class="addr"><b>פטרובאץ'</b><br>קרוב לטיילת ולחוף</div>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בריביירה — בוטיקים והקניון של בודבה</h4>
-      <p>בוטיקי נופש קטנים פזורים בסבטי סטפן ובפרזׄנו. בדרך אל בודבה או ממנה, <a href="https://www.google.com/maps/search/?api=1&query=TQ%20Plaza%20Budva" target="_blank" rel="noopener">TQ Plaza</a> הוא העצירה הממוזגת והקלה לאופנה, קוסמטיקה ומתנות.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">תחבורה מקומית</span></div>
+    <div class="subhead"><span class="sec-label">איך מתניידים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚗</span> מבודבה לסבטי סטפן / מילוצ׳ר <span class="price">~10 דק׳</span></li>
-      <li><span class="ico">🚗</span> דרומה לפטרובץ לערב <span class="price">~20 דק׳</span></li>
+      <li><span class="ico">🚗</span> ז'בליאק → צטינייה → החוף (נופי, עם עצירות) <span class="price">~3.5–4 שעות סה״כ</span></li>
     </ul></div>
   </div>
 </article>
@@ -605,75 +534,59 @@
 <!-- DAY 6 -->
 <article class="day" id="day6">
   <div class="banner">
-    <img class="ph" alt="אגם סקאדאר ופיתול פבלובה סטראנה"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Skadar%20Lake.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="אגם סקאדאר" src="https://commons.wikimedia.org/wiki/Special:FilePath/Skadar%20Lake.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 06 — שישי</span></div>
-      <h2>אגם סקאדאר ודרך היין</h2><div class="when">4 ספט׳ · שיט אגם רגוע וכרמי צרמניצה</div></div>
+      <h2>שיט באגם סקאדאר ומפלי פודגוריצה</h2><div class="when">4 בספט׳ · שיט זוגי, מפלים ותצפית הנהר</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €85 לאדם</b></span><span class="chip">יום מלא יותר — בקצב נינוח</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">שיט זוגי פרטי</span><span class="chip">ארוחה מעל המים</span><span class="badge b-romantic">💑 רומנטי</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Virpazar Lake Skadar"><img loading="lazy" alt="וירפזר על אגם סקאדאר" src="https://commons.wikimedia.org/wiki/Special:FilePath/Virpazar.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">09:30 → 12:30</div><div class="tcat">בוקר · נסיעה + סירה</div>
-        <h3>לווירפזר ושיט באגם סקאדאר</h3>
-        <p>נסיעה של 40 דקות פנימה אל וירפזר, הכפר הקטן בלב הפארק הלאומי אגם סקאדאר — האגם הגדול בבלקן, זרוע שושני מים, מנזרי איים, ואם יתמזל מזלכם — שקנאים. שיט עדין ובישיבה גולש על פני כפרי דייגים ושדות שושנים; עולים מהרציף בכפר, כמעט בלי מדרגות. רגוע, ירוק ושינוי מוחלט מהחוף.</p>
-        <div class="meta-line">🚗 <span>~40 דק׳ לווירפזר</span> · ⛴ <span>~1.5 שעות שיט בישיבה</span></div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-gentle">סירה בישיבה</span><span class="cost">שיט ≈ €15–20 לאדם</span></div>
+        <div class="imgwrap tphoto" data-map="Virpazar Lake Skadar"><img loading="lazy" alt="וירפזאר ושיט בסקאדאר" src="https://commons.wikimedia.org/wiki/Special:FilePath/Virpazar.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">09:30 → 12:00</div><div class="tcat">בוקר · שיט</div>
+        <h3>שיט זוגי פרטי באגם סקאדאר</h3>
+        <p>נסיעה קצרה אל הכפר וירפזאר (Virpazar), ויציאה לשיט פרטי ורגוע בסירת עץ על האגם הגדול בבלקן — בין שושני המים והציפורים, באוויר פתוח ובשקט מוחלט. עלייה נוחה מהרציף.</p>
+        <div class="meta-line">🚣 <span>שיט פרטי בישיבה · ~1.5 שעות</span></div>
+        <div class="badgerow"><span class="badge b-romantic">💑 רומנטי</span><span class="badge b-scenic">נופי</span></div>
       </div>
       <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Crmnica wine region Montenegro"><img loading="lazy" alt="כרם בצרמניצה מעל האגם" src="https://commons.wikimedia.org/wiki/Special:FilePath/Vineyard%20Montenegro.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">12:30 → 15:00</div><div class="tcat">צהריים ארוך · המנוחה, לחוף האגם</div>
-        <h3>צהריים ביקב בצרמניצה</h3>
-        <p>היום מנוחת הצהריים הופכת לארוחה ארוכה ונינוחה — בדיוק האמצע האיטי של היום שביקשתם, רק עם נוף לכרמים. צרמניצה היא אזור היין המפורסם של מונטנגרו, ביתו של הוְרָנָץ האדום והעמוק. יקב משפחתי במדרון מקבל אתכם לטעימה עם בשרים מיובשים, גבינה ולחם, בישיבה מעל האגם. שבו כמה שבא לכם.</p>
-        <div class="meta-line">📍 <span>דרך היין של צרמניצה</span> · 🍷 <span>טעימה + מזה</span></div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="badge b-gentle">בישיבה, מוצל</span><span class="cost">≈ €25–35 לאדם</span></div>
+        <div class="imgwrap tphoto" data-map="Niagara Falls Podgorica Restoran Nijagara"><img loading="lazy" alt="מפלי הניאגרה של מונטנגרו" src="https://commons.wikimedia.org/wiki/Special:FilePath/Niagara%20Falls%20Montenegro.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">12:30 → 14:30</div><div class="tcat">צהריים · מעל המים</div>
+        <h3>מפלי הניאגרה + ארוחה ב-Restoran Nijagara</h3>
+        <p>נסיעה של 25 דקות אל "מפלי הניאגרה" של מונטנגרו בפאתי פודגוריצה. ארוחת צהריים נהדרת ב-Restoran Nijagara הבנויה מאבן וממוקמת ממש מעל המים הזורמים.</p>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="badge b-scenic">נופי</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Pavlova Strana Lake Skadar viewpoint"><img loading="lazy" alt="פיתול הפרסה של אגם סקאדאר" src="https://commons.wikimedia.org/wiki/Special:FilePath/Pavlova%20Strana.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">15:00 → 19:00</div><div class="tcat">אחר-צהריים · חזרה בנסיעה</div>
-        <h3>הפיתול המפורסם, ואז הביתה לפני החשכה</h3>
-        <p>בדרך חזרה, עצירה מהירה בתצפית פבלובה סטראנה אל פיתול הפרסה הקלאסי של הנהר בין הגבעות — היישר מהרכב, ללא הליכה. ואז הנסיעה הנינוחה חזרה לחוף, הרכב חונה עד 19:00, בזמן לערב שקט ברגל ליד המלון.</p>
-        <div class="meta-line">🚗 <span>~45 דק׳ חזרה · עצירת צילום קצרה</span></div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-drive">🚗 פחות משעה</span></div>
-      </div>
-      <div class="tblock night reveal">
-        <div class="imgwrap tphoto" data-map="Budva seafront evening"><img loading="lazy" alt="ערב שקט על קו הים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20evening.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">20:00 →</div><div class="tcat">ערב · ברגל</div>
-        <h3>ארוחת ערב קלה ליד הבסיס</h3>
-        <p>אחרי יום מלא, נשארים קרוב: ארוחה קלה וטיול איטי לאורך קו הים ליד המלון. אין יותר נסיעות היום.</p>
-        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span></div>
+        <div class="imgwrap tphoto" data-map="Pavlova Strana viewpoint Lake Skadar"><img loading="lazy" alt="תצפית פבלובה סטרנה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Pavlova%20Strana.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">15:30</div><div class="tcat">אחר-צהריים · תצפית</div>
+        <h3>תצפית פבלובה סטרנה (Pavlova Strana)</h3>
+        <p>עצירה במבט עוצר הנשימה על עיקול הנהר המפורסם — אחת התמונות האייקוניות של מונטנגרו, ממש מהרכב. ואז חזרה נינוחה למלון.</p>
+        <div class="meta-line">📸 <span>תצפית ממש מהכביש</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">על האגם — חלופה רכה יותר</span></div>
+    <div class="subhead"><span class="sec-label">היום על המים</span></div>
     <div class="cards">
-      <div class="card" data-map="Cetinje Montenegro old royal capital" data-book-label="ℹ️ על צֶטינייה" data-book-url="https://www.google.com/maps/search/?api=1&query=Cetinje%20Montenegro%20old%20royal%20capital" data-book-note="להחלפה אם יום של סירה נשמע יותר מדי — עיר שטוחה, מוזיאונים, ארמונות">
-        <div class="imgwrap cphoto" data-map="Cetinje Montenegro"><img loading="lazy" alt="צטינייה הבירה המלכותית" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cetinje.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">חלופה · תרבות</span><h4>צֶטינייה, הבירה המלכותית</h4>
-        <p>מעדיפים להישאר ביבשה? צטינייה (~40 דק׳ מבודבה) היא בירה ישנה שטוחה ורגועה של ארמונות, מנזרים ומוזיאונים — חצי יום עדין במקום האגם.</p>
-        <div class="addr"><b>צטינייה · ~40 דק׳ מבודבה</b><br>מרכז עיר שטוח · הליכה קלה</div>
-        <div class="badgerow"><span class="badge b-culture">תרבות</span><span class="badge b-gentle">שטוח</span></div>
+      <div class="card" data-map="Virpazar Lake Skadar private boat tour" data-book-label="⛴ שיט באגם" data-book-url="https://www.google.com/maps/search/?api=1&query=Virpazar%20Skadar%20Lake%20boat%20tour" data-book-note="שיט עץ פרטי מווירפזאר · רגוע, בישיבה · הזמינו מראש">
+        <div class="imgwrap cphoto" data-map="Skadar Lake boat"><img loading="lazy" alt="סירת עץ באגם" src="https://commons.wikimedia.org/wiki/Special:FilePath/Skadar%20Lake.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">בוקר · שיט פרטי</span><h4>שיט באגם סקאדאר</h4>
+        <p>סירת עץ פרטית ורגועה מווירפזאר, בין שושני המים והציפורים — שעה וחצי של שקט על המים. עלייה נוחה מהרציף.</p>
+        <div class="addr"><b>וירפזאר</b><br>הזמינו מראש · ~1.5 שעות</div>
+        <div class="badgerow"><span class="badge b-romantic">💑 רומנטי</span><span class="cost">≈ €60–80 לזוג</span></div>
       </div>
-      <div class="card" data-map="Konoba Badanj Virpazar Skadar" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Konoba%20Badanj%20Virpazar" data-book-note="קונובה לחוף האגם בווירפזר · דגי אגם, צלופח, יין מקומי">
-        <div class="imgwrap cphoto" data-map="Virpazar restaurant Lake Skadar"><img loading="lazy" alt="צהריים של דגי אגם" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20fish.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">אם לא היקב · צהריים</span><h4>קונובות וירפזר</h4>
-        <p>בווירפזר עצמה, קונובות לחוף האגם מגישות את המנות המקומיות — קרפיון, צלופח ודגי מים מתוקים — עם כוס יין צרמניצה, ממש ליד המים.</p>
-        <div class="addr"><b>כפר וירפזר</b><br>בכל יום · קז׳ואל</div>
+      <div class="card" data-map="Restoran Nijagara Podgorica" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Restoran%20Nijagara%20Podgorica" data-book-note="בנוי מאבן מעל המפלים · נוף מים זורמים">
+        <div class="imgwrap cphoto" data-map="Restoran Nijagara Podgorica"><img loading="lazy" alt="מסעדה מעל המפלים" src="https://commons.wikimedia.org/wiki/Special:FilePath/River%20restaurant.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">צהריים · מעל המים</span><h4>Restoran Nijagara</h4>
+        <p>מסעדת אבן הבנויה ממש מעל "מפלי הניאגרה" של מונטנגרו — נוף מים זורמים, מנות מקומיות ואווירה מיוחדת.</p>
+        <div class="addr"><b>פאתי פודגוריצה</b><br>בכל יום · מומלץ להזמין</div>
         <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€18–30 לאדם</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 ליד האגם — קונים מהמקור</h4>
-      <p>הקניות הטובות היום אכילות: ב<a href="https://www.google.com/maps/search/?api=1&query=Crmnica%20winery%20Lake%20Skadar%20Montenegro" target="_blank" rel="noopener">יקב משפחתי</a> בצרמניצה אפשר לקנות יין וְרָנָץ, רקייה ודבש היישר מהיצרן, ודוכני וירפזר מוכרים תוצרת מקומית. בחזרה ליד הבסיס, <a href="https://www.google.com/maps/search/?api=1&query=TQ%20Plaza%20Budva" target="_blank" rel="noopener">TQ Plaza</a> אם בא לכם הקניון.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">איך מגיעים</span></div>
+    <div class="subhead"><span class="sec-label">איך מתניידים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚗</span> מבודבה לווירפזר (רובו כביש מהיר, קל) <span class="price">~40 דק׳</span></li>
-      <li><span class="ico">💡</span> הכי קל מכל: להזמין סיור מודרך של אגם-ויין עם איסוף, ולוותר על הנהיגה לגמרי <span class="price">≈ €60–80 לאדם</span></li>
+      <li><span class="ico">🚗</span> החוף → וירפזאר → פודגוריצה → פבלובה סטרנה → חזרה <span class="price">קטעים קצרים</span></li>
     </ul></div>
   </div>
 </article>
@@ -681,85 +594,62 @@
 <!-- DAY 7 -->
 <article class="day" id="day7">
   <div class="banner">
-    <img class="ph" alt="המרינה של פורטו מונטנגרו בטיבט"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Porto%20Montenegro.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="פראסט וגבירתנו של הסלעים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Our%20Lady%20of%20the%20Rocks.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 07 — שבת</span></div>
-      <h2>לטיבט ולפורטו מונטנגרו</h2><div class="when">5 ספט׳ · מחליפים בסיס (2 לילות) · מרינה, בוטיקים והסיום הקל</div></div>
+      <h2>פיורד קוטור ועיירת הקפטנים</h2><div class="when">5 בספט׳ · פראסט, קוטור וכביש הסרפנטינות</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €70 לאדם</b></span><span class="chip">החלפת המלון האחרונה · נסיעה קצרה</span><span class="badge b-shop">קניות</span></div>
+    <div class="daymeta"><span class="chip">שיט קצר ועיר עתיקה</span><span class="chip">סמטאות אבן שטוחות</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Tivat Montenegro"><img loading="lazy" alt="טיבט והמפרץ" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">10:00 → 12:00</div><div class="tcat">בוקר · נסיעה</div>
-        <h3>מבודבה לטיבט</h3>
-        <p>בוקר נסיעה נינוח חזרה לעבר המפרץ אל טיבט — כ-35–40 דקות — ואל הבסיס האחרון של הטיול, שנבחר כך ששני הלילות האחרונים יהיו רגועים ושדה התעופה במרחק עשר דקות. צ׳ק-אין, מורידים תיקים.</p>
-        <div class="meta-line">🚗 <span>~35–40 דק׳ · עצירה אם בא לכם</span></div>
-        <div class="badgerow"><span class="badge b-drive">🚗 ~40 דק׳</span></div>
+        <div class="imgwrap tphoto" data-map="Perast Montenegro"><img loading="lazy" alt="פראסט הציורית" src="https://commons.wikimedia.org/wiki/Special:FilePath/Perast.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">10:00 → 12:00</div><div class="tcat">בוקר · שיט קצר</div>
+        <h3>פראסט וגבירתנו של הסלעים</h3>
+        <p>נסיעה לעיירה הציורית פראסט (Perast), ושיט קצר ונינוח של 5 דקות בסירת מנוע אל האי המלאכותי והכנסייה הרומנטית "גבירתנו של הסלעים". עלייה נוחה, הכול שטוח.</p>
+        <div class="meta-line">⛵ <span>שיט 5 דק׳ · עלייה נוחה</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-romantic">💑 רומנטי</span></div>
       </div>
-      <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Tivat seafront"><img loading="lazy" alt="טיילת טיבט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat%20waterfront.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">14:00 → 16:00</div><div class="tcat">ההפוגה הרגועה</div>
-        <h3>צהריים ומנוחה</h3>
-        <p>צהריים נינוחים ליד המרינה, ואז מנוחה במלון לפני ערב קל ומפנק ממש לאורך הרציף.</p>
-        <div class="badgerow"><span class="badge b-gentle">במלון</span></div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Kotor Old Town"><img loading="lazy" alt="העיר העתיקה של קוטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%2C%20Montenegro.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">12:30 → 15:30</div><div class="tcat">צהריים · עיר עתיקה</div>
+        <h3>העיר העתיקה של קוטור</h3>
+        <p>חניה מוסדרת מול הים וכניסה רגלית לסמטאות האבן הוונציאניות השטוחות — מלאות בבתי קפה, נגני רחוב, כיכרות עתיקות וחנויות. ארוחת צהריים על אחת המרפסות, וזמן לשוטט בנחת.</p>
+        <div class="meta-line">🚶 <span>סמטאות שטוחות</span> · 🛍 <span>חנויות ומזכרות</span></div>
+        <div class="badgerow"><span class="badge b-culture">תרבות</span><span class="badge b-shop">קניות</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Porto Montenegro Tivat marina shops"><img loading="lazy" alt="בוטיקים ויאכטות בפורטו מונטנגרו" src="https://commons.wikimedia.org/wiki/Special:FilePath/Porto%20Montenegro%20marina.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">17:00 → 21:00</div><div class="tcat">ערב · ברגל</div>
-        <h3>פורטו מונטנגרו — קניות והמרינה</h3>
-        <p>כל הערב ברגל, שטוח וממש ליד המים: פורטו מונטנגרו הוא כפר מרינה מטופח של למעלה מ-70 בוטיקים (החנויות פתוחות עד 21:00 בערך), גלריות ובתי קפה על המים, כשיאכטות-על משתרכות לצידם. שוטטו ב-Strada, צפו בסירות, בקרו באוסף המורשת הימי הקטן, וארוחת ערב על הרציף.</p>
-        <div class="meta-line">📍 <span>פורטו מונטנגרו, טיבט</span> · 🛍 <span>חנויות עד ~21:00</span></div>
-        <div class="badgerow"><span class="badge b-shop">קניות</span><span class="badge b-foot">🚶 ברגל</span><span class="badge b-gentle">מרינה שטוחה</span></div>
+        <div class="imgwrap tphoto" data-map="Kotor Serpentine viewpoint"><img loading="lazy" alt="כביש הסרפנטינות מעל מפרץ קוטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kotor%20Bay%20view.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">16:00</div><div class="tcat">אחר-צהריים · נסיעה חווייתית</div>
+        <h3>כביש הסרפנטינות מעל המפרץ</h3>
+        <p>נסיעה חווייתית ואיטית חזרה דרך "כביש הסרפנטינות" המפורסם, המשקיף על מפרץ קוטור כולו ממעוף הציפור. עוצרים בתצפיות לאורך הדרך — מרהיב בשקיעה.</p>
+        <div class="meta-line">🚗 <span>נסיעה איטית ומפותלת · נופית מאוד</span></div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-drive">🚗 איטי</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">איפה לישון — בסיס טיבט (2 לילות)</span></div>
+    <div class="subhead"><span class="sec-label">ארוחת הצהריים</span></div>
     <div class="cards">
-      <div class="card" data-map="Regent Porto Montenegro Tivat" data-book-label="🏨 פרטי הלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=Regent%20Porto%20Montenegro%20Tivat" data-book-note="הפינוק לצד המרינה · בריכה, ספא, צעדים מהחנויות (5★)">
-        <div class="imgwrap cphoto" data-map="Regent Porto Montenegro Tivat"><img loading="lazy" alt="מלון מרינה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Porto%20Montenegro%20hotel.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">לצד המרינה · יוקרתי</span><h4>ריג׳נט פורטו מונטנגרו</h4>
-        <p>ממש בכפר המרינה, בסגנון ונציאני-רנסנס, עם בריכה וספא והבוטיקים על מפתן הדלת. אפשרות הפינוק לשני הלילות האחרונים.</p>
-        <div class="addr"><b>פורטו מונטנגרו, טיבט</b><br>בריכה · ספא · חניה</div>
-        <div class="badgerow"><span class="badge b-shop">ליד החנויות</span><span class="cost">≈ €250–400 ללילה</span></div>
+      <div class="card" data-map="Conte Restaurant Perast" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Conte%20Restaurant%20Perast" data-book-note="מרפסת מים בפראסט · דגים · נוף לאיים">
+        <div class="imgwrap cphoto" data-map="Conte Restaurant Perast"><img loading="lazy" alt="מרפסת דגים בפראסט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20seafood.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">צהריים · על המים (פראסט)</span><h4>Conte (פראסט)</h4>
+        <p>מרפסת על קצה המים בפראסט, מול האיים — דגים טריים וצהריים נינוח. אפשרות נעימה לפני קוטור.</p>
+        <div class="addr"><b>טיילת פראסט</b><br>בכל יום · מקסים בצהריים</div>
+        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="cost">€25–40 לאדם</span></div>
       </div>
-      <div class="card" data-map="boutique hotel Tivat near Porto Montenegro" data-book-label="🏨 לעיון בלינה" data-book-url="https://www.google.com/maps/search/?api=1&query=boutique%20hotel%20Tivat%20near%20Porto%20Montenegro%204%20star" data-book-note="כמה בוטיקים 3–4★ במרחק הליכה שטוח קצר מהמרינה">
-        <div class="imgwrap cphoto" data-map="Tivat boutique hotel"><img loading="lazy" alt="מלון בוטיק בטיבט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat%20hotel.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">בוטיק · 3–4★ · תמורה טובה</span><h4>בוטיק ליד המרינה</h4>
-        <p>לבריף של 3–4★, כמה מלונות בוטיק קטנים יושבים במרחק הליכה שטוח של 5–10 דקות מפורטו מונטנגרו — גישה למרינה בלי מחיר המרינה. בחרו אחד עם חניה.</p>
-        <div class="addr"><b>מרכז טיבט, ליד המרינה</b><br>במרחק הליכה · חניה</div>
-        <div class="badgerow"><span class="badge b-gentle">שטוח וקרוב</span><span class="cost">≈ €110–180 ללילה</span></div>
-      </div>
-    </div>
-
-    <div class="subhead"><span class="sec-label">ארוחת הערב</span></div>
-    <div class="cards">
-      <div class="card" data-map="Konoba Mala Barka Tivat" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Konoba%20Mala%20Barka%20Tivat" data-book-note="דגים על קו המים · צפייה בסירות · תמנון בגריל, לברק">
-        <div class="imgwrap cphoto" data-map="Konoba Mala Barka Tivat"><img loading="lazy" alt="תמנון בגריל ליד המים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20octopus.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · על קו המים</span><h4>קונובה מאלה בארקה</h4>
-        <p>מקום דגים אהוב ממש על טיילת טיבט — שלל טרי, תמנון בגריל ולברק, כשהסירות מתנדנדות לצד. נינוח והגיוני במחיר.</p>
-        <div class="addr"><b>טיילת טיבט (פיינ׳)</b><br>בכל יום · הזמינו שולחן ליד המים</div>
-        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€18–30 לאדם</span></div>
-      </div>
-      <div class="card" data-map="Murano restaurant Regent Porto Montenegro Tivat" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Murano%20restaurant%20Porto%20Montenegro%20Tivat" data-book-note="אוכל לצד המרינה בריג׳נט · פיצה בטאבון, פסטה, דגים">
-        <div class="imgwrap cphoto" data-map="Porto Montenegro restaurants"><img loading="lazy" alt="אוכל לצד המרינה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Marina%20dining.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · על המרינה</span><h4>מרפסות פורטו מונטנגרו</h4>
-        <p>לאורך המרינה, מרפסות מהוקצעות (מוראנו בריג׳נט ואחרות) מגישות דגים, פסטה ופיצה בטאבון עם נוף יאכטות מסוגנן — לילה כמעט-אחרון הולם.</p>
-        <div class="addr"><b>רציף פורטו מונטנגרו</b><br>בכל יום · הזמינו שולחן על הרציף</div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="cost">€28–45 לאדם</span></div>
+      <div class="card" data-map="Kotor old town restaurant" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Kotor%20old%20town%20restaurant%20konoba" data-book-note="שפע מרפסות וקונובות בסמטאות קוטור">
+        <div class="imgwrap cphoto" data-map="Kotor old town restaurants"><img loading="lazy" alt="מסעדה בסמטאות קוטור" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seafood%20platter.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">צהריים · בקוטור</span><h4>בסמטאות קוטור</h4>
+        <p>אם תעדיפו לאכול בקוטור — הסמטאות מלאות מרפסות וקונובות עם דגים ומטבח מונטנגרי, הכול במרחק הליכה שטוח.</p>
+        <div class="addr"><b>העיר העתיקה של קוטור</b><br>בכל יום · בחרו מרפסת</div>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="cost">€20–35 לאדם</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בטיבט — פורטו מונטנגרו, האירוע המרכזי</h4>
-      <p>הערב הזה הוא הגדול: ה-Strada Navale של <a href="https://www.google.com/maps/search/?api=1&query=Porto%20Montenegro%20Tivat%20shops" target="_blank" rel="noopener">פורטו מונטנגרו</a> — דיור, קרטייה, רולקס, ולנטינו ועוד כ-70 — לצד בוטיקים מקומיים נחמדים (שׁיפָּה בוטיק, Cubico) וחנות הפרושוטו האומנותית. פתוח 9:00–21:00 א׳–ש׳, הכול שטוח לצד המרינה.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">איך מגיעים</span></div>
+    <div class="subhead"><span class="sec-label">איך מתניידים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚗</span> מבודבה לטיבט <span class="price">~35–40 דק׳</span></li>
-      <li><span class="ico">🛍</span> חנויות פורטו מונטנגרו: בערך 9:00–21:00, א׳–ש׳ <span class="price">כניסה חופשית לשיטוט</span></li>
+      <li><span class="ico">🚗</span> החוף → פראסט → קוטור <span class="price">קטעים קצרים לאורך המפרץ</span></li>
+      <li><span class="ico">⛵</span> פראסט → גבירתנו של הסלעים (סירת מנוע) <span class="price">≈ €5 לאדם</span></li>
+      <li><span class="ico">🅿️</span> חניה מול הים בקוטור; העיר העתיקה להולכי רגל <span class="price">≈ €1–2 לשעה</span></li>
     </ul></div>
   </div>
 </article>
@@ -767,67 +657,58 @@
 <!-- DAY 8 -->
 <article class="day" id="day8">
   <div class="banner">
-    <img class="ph" alt="הכפר גורנייה לסטבה מעל טיבט"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Gornja%20Lastva.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="חוף ושקיעה על הריביירה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20Riviera.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 08 — ראשון</span></div>
-      <h2>יום אחרון נינוח במפרץ</h2><div class="when">6 ספט׳ · בחרו את הקצב · וערב פרידה</div></div>
+      <h2>יום חופשי על החוף</h2><div class="when">6 בספט׳ · נינוח לגמרי · ים, טיילת וערב רומנטי</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €60 לאדם</b></span><span class="chip">נינוח כמה שבא לכם</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">בלי לוח זמנים</span><span class="chip">מנוחה ורומנטיקה</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Gornja Lastva Tivat"><img loading="lazy" alt="כפר אבן ישן מעל טיבט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Gornja%20Lastva%20village.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">10:00 → 13:00</div><div class="tcat">בוקר · בחרו אחת</div>
-        <h3>כפר שקט, סירה, או סתם המרינה</h3>
-        <p><b>אפשרות א׳ —</b> נסיעה קצרה במעלה לגורנייה לסטבה, כפר אבן ישן ומנומנם מעל טיבט עם כנסייה ונוף ארוך על המפרץ. <b>אפשרות ב׳ —</b> שיט עדין ובישיבה במפרץ ('גבירתנו של הסלעים' שוב, או המערה הכחולה) מרציפי טיבט/קוטור. <b>אפשרות ג׳ —</b> לא לעשות כלום: קפה על המרינה, שיטוט אחרון בבוטיקים, והגן הבוטני ליד המוזיאון הימי. בחירה שלכם.</p>
-        <div class="meta-line">🚗 <span>גורנייה לסטבה ~15 דק׳</span> · ⛴ <span>סירה לפי בחירה</span></div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="badge b-shop">קניות</span><span class="badge b-gentle">בקצב שלכם</span></div>
+        <div class="imgwrap tphoto" data-map="Budva beach Montenegro"><img loading="lazy" alt="בוקר רגוע על החוף" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20beach.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">בוקר</div><div class="tcat">בוקר · בנחת</div>
+        <h3>בוקר עצלן על הים</h3>
+        <p>בוקר חופשי לגמרי — ארוחת בוקר ארוכה, חוף או בריכת המלון, וקפה מול הים. בלי שום לוח זמנים, רק להיות.</p>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Budva Old Town"><img loading="lazy" alt="העיר העתיקה של בודבה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20old%20town.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">לפי בחירה</div><div class="tcat">אופציונלי · ברגל</div>
+        <h3>טיול קל בעיר העתיקה / טיילת פטרובאץ'</h3>
+        <p>אם בא לכם תנועה קלה: שיטוט נינוח בעיר העתיקה של בודבה (שטוחה, מלאה חנויות ובתי קפה), או על טיילת פטרובאץ' הרגועה. גם קצת קניות — בוטיקים בעיר העתיקה או קניון TQ Plaza.</p>
+        <div class="meta-line">🚶 <span>שטוח · לפי הרצון</span> · 🛍 <span>קניות אופציונליות</span></div>
+        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span><span class="badge b-shop">קניות</span></div>
       </div>
       <div class="tblock rest reveal">
-        <div class="imgwrap tphoto" data-map="Tivat marina café"><img loading="lazy" alt="מנוחה בבית קפה במרינה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat%20marina.jpg?width=800" onerror="this.remove()"></div>
+        <div class="imgwrap tphoto" data-map="Budva seafront cafe"><img loading="lazy" alt="מנוחת צהריים על החוף" src="https://commons.wikimedia.org/wiki/Special:FilePath/Budva%20marina.jpg?width=800" onerror="this.remove()"></div>
         <div class="ttime">14:00 → 16:00</div><div class="tcat">ההפוגה הרגועה</div>
-        <h3>צהריים ארוך אחרון ומנוחה</h3>
-        <p>צהריים נינוחים ליד המים ומנוחת אחר-צהריים אחרונה — והזדמנות לארוז מחדש בנחת לקראת היציאה המוקדמת-יחסית מחר.</p>
-        <div class="badgerow"><span class="badge b-gentle">במלון</span></div>
+        <h3>צהריים ומנוחה</h3>
+        <p>צהריים נינוח ליד הים ומנוחת אחר-צהריים — לצבור כוחות לערב, ולהתחיל לארוז בנחת לקראת מחר.</p>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span></div>
       </div>
       <div class="tblock eve reveal">
-        <div class="imgwrap tphoto" data-map="Porto Montenegro sunset"><img loading="lazy" alt="שקיעה מעל המרינה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Porto%20Montenegro%20sunset.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">18:00 → 21:30</div><div class="tcat">ערב · ברגל</div>
-        <h3>ארוחת פרידה על המים</h3>
-        <p>הערב האחרון, נשמר מיוחד ופשוט — טיול שקיעה לאורך הרציף וארוחת פרידה ליד המרינה, הכול כמה צעדים שטוחים מהמלון. דרך נאה להרים כוסית לחיי הטיול.</p>
-        <div class="meta-line">📍 <span>פורטו מונטנגרו / טיילת טיבט</span></div>
-        <div class="badgerow"><span class="badge b-foot">🚶 ברגל</span><span class="badge b-food">אוכל ויין</span></div>
+        <div class="imgwrap tphoto" data-map="Sveti Stefan sunset restaurant"><img loading="lazy" alt="ארוחת ערב רומנטית מול הים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Adriatic%20sunset.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">18:30 → 21:30</div><div class="tcat">ערב · רומנטי</div>
+        <h3>ארוחת ערב רומנטית על קו המים</h3>
+        <p>הערב האחרון על החוף — שקיעה על הטיילת וארוחת פרידה רומנטית מול הים. נעים, איטי ובלי למהר.</p>
+        <div class="badgerow"><span class="badge b-romantic">💑 רומנטי</span><span class="badge b-food">אוכל ויין</span></div>
       </div>
     </div>
 
     <div class="subhead"><span class="sec-label">ארוחת הערב</span></div>
     <div class="cards">
-      <div class="card" data-map="Punto Crudo restaurant Donja Lastva Tivat" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Punto%20Crudo%20restaurant%20Donja%20Lastva%20Tivat" data-book-note="אקו-מסעדה בבניין היסטורי לחוף הים ליד טיבט · מטבח יצירתי">
-        <div class="imgwrap cphoto" data-map="Punto Crudo Donja Lastva Tivat"><img loading="lazy" alt="אוכל יצירתי על קו המים" src="https://commons.wikimedia.org/wiki/Special:FilePath/Fine%20seafood.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · מיוחד ונופי</span><h4>פּונטו קרודו (דונייה לסטבה)</h4>
-        <p>אקו-מסעדה מקסימה בבניין היסטורי ממש ליד הים מעט מחוץ לטיבט — בישול יצירתי ומיקום יפהפה על המים לארוחת פרידה.</p>
-        <div class="addr"><b>דונייה לסטבה, לחוף הים</b><br>בכל יום · הזמינו מראש</div>
-        <div class="badgerow"><span class="badge b-scenic">נופי</span><span class="cost">€30–48 לאדם</span></div>
-      </div>
-      <div class="card" data-map="Tivat seafront restaurants" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Tivat%20seafront%20restaurant%20seafood" data-book-note="או כל אחד מפונדקי קו-המים הנינוחים לאורך טיילת טיבט">
-        <div class="imgwrap cphoto" data-map="Tivat promenade restaurants"><img loading="lazy" alt="אוכל על טיילת טיבט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seafront%20dining.jpg?width=800" onerror="this.remove()"></div>
-        <span class="kind">ערב · קל וקרוב</span><h4>טיילת טיבט</h4>
-        <p>אם בא לכם לא להזיז את הרכב בכלל, טיילת טיבט ורציף פורטו מונטנגרו משופעים מרפסות נינוחות — בחרו אחת והתמקמו.</p>
-        <div class="addr"><b>טיילת טיבט</b><br>בכל יום · שטוח, להליכה</div>
-        <div class="badgerow"><span class="badge b-gentle">ברגל</span><span class="cost">€20–35 לאדם</span></div>
+      <div class="card" data-map="Budva seafront restaurant seafood" data-book-label="📞 הזמנה / טלפון" data-book-url="https://www.google.com/maps/search/?api=1&query=Budva%20seafront%20restaurant%20seafood" data-book-note="מרפסות דגים על קו המים בבודבה / פטרובאץ'">
+        <div class="imgwrap cphoto" data-map="Budva seafront restaurant"><img loading="lazy" alt="מרפסת דגים על החוף" src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20fish%20plate.jpg?width=800" onerror="this.remove()"></div>
+        <span class="kind">ערב · על קו המים</span><h4>מרפסת דגים על החוף</h4>
+        <p>בחרו מרפסת על קו המים בבודבה או בפטרובאץ' — דגים טריים, יין מקומי ושקיעה. פרידה מתוקה מהחוף.</p>
+        <div class="addr"><b>בודבה / פטרובאץ'</b><br>בכל יום · הזמינו שולחן עם נוף</div>
+        <div class="badgerow"><span class="badge b-romantic">💑 רומנטי</span><span class="cost">€25–40 לאדם</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בטיבט — שיטוט אחרון ומתנות גורמה</h4>
-      <p>סבב אחרון ב<a href="https://www.google.com/maps/search/?api=1&query=Porto%20Montenegro%20Tivat%20shops" target="_blank" rel="noopener">פורטו מונטנגרו</a> ובבוטיקי כיכר התרבות של טיבט למזכרות, קרמיקה אדריאטית ומוצרי גורמה מונטנגריים — שמן זית, פרושוטו, רקייה — להביא הביתה.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">תחבורה מקומית</span></div>
+    <div class="subhead"><span class="sec-label">איך מתניידים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚶</span> המרינה וקו הים שטוחים ולהליכה — מינימום נהיגה היום <span class="price">חינם</span></li>
-      <li><span class="ico">🚗</span> קפיצה קצרה ורשות לגורנייה לסטבה לנוף <span class="price">~15 דק׳</span></li>
+      <li><span class="ico">🚶</span> יום נינוח ברובו ברגל וליד המלון — מינימום נהיגה <span class="price">חופשי</span></li>
     </ul></div>
   </div>
 </article>
@@ -835,70 +716,80 @@
 <!-- DAY 9 -->
 <article class="day" id="day9">
   <div class="banner">
-    <img class="ph" alt="מפרץ קוטור במבט מעל טיבט"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Kotor%20aerial.jpg?width=1600" onerror="this.remove()">
+    <img class="ph" alt="מרינת לוסטיצה ביי" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lu%C5%A1tica%20Bay.jpg?width=1600" onerror="this.remove()">
     <div class="banner-in"><div class="daytag"><span class="daynum">יום 09 — שני</span></div>
-      <h2>הביתה, בדרך הקלה</h2><div class="when">7 ספט׳ · יציאה בבוקר · שדה התעופה במרחק 10 דקות</div></div>
+      <h2>חצי האי לוסטיצה וטיסה חזרה</h2><div class="when">7 בספט׳ · לוסטיצה ביי, ארוחת סיום וטיסה ב-16:00</div></div>
   </div>
   <div class="wrap day-body">
-    <div class="daymeta"><span class="chip">תקציב יומי <b>≈ €15 לאדם</b></span><span class="chip">בלי לחץ, בלי נסיעה ארוכה</span><span class="badge b-gentle">נוח</span></div>
+    <div class="daymeta"><span class="chip">מרינה שטוחה ונוחה</span><span class="chip">ארוחת סיום חגיגית</span><span class="badge b-gentle">נוח</span></div>
     <div class="spine">
       <div class="tblock reveal">
-        <div class="imgwrap tphoto" data-map="Tivat seafront morning"><img loading="lazy" alt="קפה אחרון של בוקר ליד המפרץ" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat%20morning.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">מ-08:00</div><div class="tcat">בוקר · בנחת</div>
-        <h3>קפה אחרון ליד המים</h3>
-        <p>ארוחת בוקר במלון, ואם יש זמן לפני הטיסה — קפה איטי אחרון על המרינה. בדיוק בשביל זה הטיול מסתיים בטיבט — שדה התעופה במרחק דקות, אז הבוקר האחרון רגוע, לא בהול.</p>
-        <div class="badgerow"><span class="badge b-gentle">שטוח וקרוב</span></div>
+        <div class="imgwrap tphoto" data-map="Luštica Bay Montenegro"><img loading="lazy" alt="הדרך ללוסטיצה ביי" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lustica%20Bay.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">10:00</div><div class="tcat">בוקר · נסיעה קצרה</div>
+        <h3>צ'ק-אאוט ונסיעה ללוסטיצה</h3>
+        <p>צ'ק-אאוט מהמלון בחוף ונסיעה קצרה (כ-30 דקות) אל חצי האי לוסטיצה — נחיתה רכה לקראת סוף הטיול.</p>
+        <div class="meta-line">🚗 <span>~30 דק׳</span></div>
+        <div class="badgerow"><span class="badge b-drive">🚗 30 דק׳</span></div>
+      </div>
+      <div class="tblock reveal">
+        <div class="imgwrap tphoto" data-map="Luštica Bay marina"><img loading="lazy" alt="מרינת לוסטיצה ביי" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lu%C5%A1tica%20Bay%20marina.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">10:30 → 13:00</div><div class="tcat">בוקר · מרינה</div>
+        <h3>מרינת Luštica Bay</h3>
+        <p>סיור נינוח במתחם המרינה היוקרתי והחדיש — שטוח לחלוטין, נקי ומלא ביאכטות, חנויות בוטיק ובתי קפה יפהפיים. מקום מושלם לטייל לאט, לשבת ולצלם.</p>
+        <div class="meta-line">🚶 <span>מרינה שטוחה לגמרי</span> · 🛍 <span>בוטיקים</span></div>
+        <div class="badgerow"><span class="badge b-gentle">נוח</span><span class="badge b-shop">קניות</span></div>
+      </div>
+      <div class="tblock rest reveal">
+        <div class="imgwrap tphoto" data-map="Luštica Bay marina restaurant"><img loading="lazy" alt="ארוחת סיום במרינה" src="https://commons.wikimedia.org/wiki/Special:FilePath/Marina%20dining.jpg?width=800" onerror="this.remove()"></div>
+        <div class="ttime">13:00 → 15:00</div><div class="tcat">צהריים · סיום חגיגי</div>
+        <h3>ארוחת צהריים מסכמת על המים</h3>
+        <p>ארוחת צהריים חגיגית ומסכמת של הטיול באחת המסעדות האיכותיות שעל קו המים במרינה — מצדיעים למסע.</p>
+        <div class="badgerow"><span class="badge b-food">אוכל ויין</span><span class="badge b-romantic">💑 רומנטי</span></div>
       </div>
       <div class="tblock eve reveal">
         <div class="imgwrap tphoto" data-map="Tivat Airport Montenegro"><img loading="lazy" alt="שדה התעופה טיבט" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tivat%20Airport%20terminal.jpg?width=800" onerror="this.remove()"></div>
-        <div class="ttime">~2.5 שעות לפני הטיסה</div><div class="tcat">יציאה · נסיעה קצרה</div>
-        <h3>החזרת הרכב ← שדה התעופה טיבט</h3>
-        <p>נסיעה של עשר דקות לשדה התעופה, החזרת הרכב השכור בטרמינל, וכבר עברתם צ׳ק-אין בנוחות. (טיבט קטן ועמוס בקיץ — הגעה שעתיים נוחות מראש שומרת על השלווה.)</p>
-        <div class="meta-line">🚗 <span>~10 דק׳ · החזרת רכב בטרמינל</span></div>
-        <div class="badgerow"><span class="badge b-drive">🚗 10 דק׳</span></div>
+        <div class="ttime">15:30 → טיסה 16:00</div><div class="tcat">יציאה</div>
+        <h3>נסיעה לשדה התעופה והחזרת הרכב</h3>
+        <p>נסיעה קצרה של כ-20 דקות ישירות לנמל התעופה טיבט, החזרת ה-SUV השכור והתארגנות לטיסה (בשעה 16:00). סיום נוח, השדה ממש קרוב.</p>
+        <div class="meta-line">🚗 <span>לוסטיצה → טיבט ~20 דק׳</span></div>
+        <div class="badgerow"><span class="badge b-drive">🚗 20 דק׳</span></div>
       </div>
     </div>
 
-    <div class="subhead"><span class="sec-label">קניות היום</span></div>
-    <div class="shopstrip">
-      <h4>🛍 בדרך החוצה — של הרגע האחרון</h4>
-      <p>זמן לעצירה אחרונה ומהירה ב<a href="https://www.google.com/maps/search/?api=1&query=Porto%20Montenegro%20Tivat%20shops" target="_blank" rel="noopener">פורטו מונטנגרו</a> או בחנויות שדה התעופה למתנות אחרונות לפני הטיסה. צנצנות גורמה ובקבוק וְרָנָץ נארזים יפה.</p>
-    </div>
-
-    <div class="subhead"><span class="sec-label">היציאה</span></div>
+    <div class="subhead"><span class="sec-label">איך יוצאים</span></div>
     <div class="transport"><ul>
-      <li><span class="ico">🚗</span> מהמלון לשדה התעופה טיבט, החזרת הרכב בטרמינל <span class="price">~10 דק׳</span></li>
-      <li><span class="ico">✈️</span> טיבט (TIV) קומפקטי — הגיעו ~שעתיים לפני טיסת קיץ <span class="price">—</span></li>
+      <li><span class="ico">🚗</span> החוף → לוסטיצה ביי <span class="price">~30 דק׳</span></li>
+      <li><span class="ico">✈️</span> לוסטיצה → שדה התעופה טיבט, החזרת רכב, טיסה 16:00 <span class="price">~20 דק׳</span></li>
     </ul></div>
   </div>
 </article>
 
 <section class="block notes" id="notes">
   <div class="wrap">
-    <div class="sec-label">לפני שיוצאים — האותיות הקטנות שחשובות</div>
+    <div class="sec-label">לפני שיוצאים — מידע שימושי</div>
     <h2>הערות מעשיות</h2>
     <div class="notegrid">
-      <div class="note"><h4>הלולאה וכללי הנהיגה</h4>
-        <p>שלושה בסיסים, שני מעברי מלון: מפרץ קוטור (3 לילות) → ריביירת בודבה (3) → טיבט (2). כל קטע — שדה תעופה→קוטור, קוטור→בודבה, בודבה→טיבט, וכל טיול יום — פחות משעה, ואנחנו עוצרים לפחות פעם בשעה בדרך. הטיול מסתיים בכוונה בטיבט, דקות מהטיסה.</p>
-        <p><span class="flag">לתשומת לב:</span> עבודות כביש בקיץ במנהרת וְרְמָץ עלולות להאט את הקטע קוטור–בודבה–טיבט — צאו עם מרווח זמן, לא בלחץ.</p></div>
-      <div class="note"><h4>קצב מותאם לקבוצה</h4>
-        <p>הכול בנוי סביב קצב הליכה איטי ונינוח, מנוחת 14:00–16:00, ומסלולים שטוחים עם עצירות תכופות לשבת ולנוח. אנחנו מדלגים בכוונה על הקטעים המאתגרים — הטיפוס לחומות קוטור והסרפנטינות הסחרחרות של לוֹבְצֶ׳ן — ונשענים על סירות בישיבה ונסיעות קצרות. ביום אגם סקאדאר המנוחה הופכת לצהריים ארוך לחוף האגם.</p></div>
-      <div class="note"><h4>סבטי סטפן — לצפייה בלבד</h4>
-        <p>האי-מלון האייקוני (אמאן סבטי סטפן) סגור מאז 2020 ואי אפשר לעלות לאי. התמונה המפורסמת היא <span class="flag">הנוף מהיבשה</span> במילוצ׳ר — שזו ממילא הזווית הטובה ביותר, וקלה מאוד להגעה.</p></div>
-      <div class="note"><h4>מלונות והזמנה</h4>
-        <p>הבחירות הן בוטיק 3–4★ (עם אפשרות 5★ אחת לצד המרינה בטיבט, אם רוצים להתפנק בסוף). סוף אוגוסט/תחילת ספטמבר הם שיא העונה בחוף — <span class="flag">הזמינו את שלושת הבסיסים מבעוד מועד</span>, ובחרו מקומות עם חניה משלהם כי יהיה לכם רכב.</p></div>
-      <div class="note"><h4>רכב וחניה</h4>
-        <p>הערים העתיקות (קוטור, בודבה, פראסט) הולכות-רגל — חונים במגרשים ממש מחוץ לחומות והולכים בסמטאות השטוחות. הכבישים טובים ונופיים; דלק ואגרות צנועים (אגרת מנהרת סוֹזׄינָה היא כמה אירו). שווה לבקש רכב אוטומטי לנוחות.</p></div>
-      <div class="note"><h4>כסף, עונה והתאריך</h4>
-        <p>מונטנגרו משתמשת ב<span class="flag">אירו</span>; כרטיסים מתקבלים כמעט בכל מקום, אבל החזיקו מזומן לקונובות ולסירות. תחילת ספטמבר חמה ומקסימה עם פחות צפיפות מאוגוסט. <span class="flag">לתשומת לב:</span> ה-30 באוג׳ 2026 הוא יום <b>ראשון</b> (לא רביעי) — אמרו לי מה הנקודה הקבועה, התאריכים או היום בשבוע, ואעצב מחדש את השבוע.</p></div>
+      <div class="note"><h4>מלונות</h4>
+        <p><span class="flag">חלק א' (הרים):</span> Hotel Soa, ז'בליאק · חלופה: Hotel Polar Star.</p>
+        <p><span class="flag">חלק ב' (חוף):</span> Hotel Šajo, בודבה · חלופה: Villa Oliva, פטרובאץ'. רק החלפת מלון אחת בכל הטיול.</p></div>
+      <div class="note"><h4>קצב נינוח ונוח</h4>
+        <p>הכול בנוי לשני זוגות בגיל 70+: הליכות שטוחות וקצרות, רכבל במקום טיפוס, סירות וגשרים מישוריים, ומנוחות יומיות. נופים רבים מגיעים ממש מהרכב — בלי מאמץ.</p></div>
+      <div class="note"><h4>רכב ונהיגה</h4>
+        <p>SUV מרווח לכבישי ההרים והחוף. הכבישים טובים ונופיים; <span class="flag">כביש הסרפנטינות של קוטור</span> מפותל ואיטי — נהגו בנחת ועצרו בתצפיות. דלק ואגרות צנועים.</p></div>
+      <div class="note"><h4>סווטי סטפן — לצפייה</h4>
+        <p>האי-מלון האייקוני סגור לכניסה — צופים בו מנקודת התצפית שעל הכביש, שזו ממילא הזווית היפה ביותר, במיוחד בשקיעה.</p></div>
+      <div class="note"><h4>כסף ועונה</h4>
+        <p>מונטנגרו משתמשת ב<span class="flag">אירו</span>; כרטיסים מתקבלים, אבל החזיקו מזומן לקונובות, סירות וחניות. סוף אוגוסט/תחילת ספטמבר נעים — חם בחוף וקריר ורענן בהרים.</p></div>
+      <div class="note"><h4>מספרי חירום</h4>
+        <p>משטרה: <span class="flag">122</span> · אמבולנס: <span class="flag">124</span> · סיוע בדרכים (ממס״י מקומי): <span class="flag">19807</span>.</p></div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="mono">מונטנגרו · 30 באוגוסט – 7 בספטמבר 2026 · קוטור · בודבה · טיבט</div>
-  <p style="margin:10px 0 0">תוכנית עבודה — זמנים, מחירים ושעות פתיחה לאישור בעת ההזמנה. נמשיך לעדכן תוך כדי.</p>
+  <div class="mono">מונטנגרו · 30 באוגוסט – 7 בספטמבר 2026 · דורמיטור · החוף</div>
+  <p style="margin:10px 0 0">נחיתה בטיבט 30 באוג׳ · טיסה חזרה 7 בספט׳ 16:00 · שני זוגות, SUV מרווח</p>
+  <p style="margin:6px 0 0">תוכנית עבודה — זמנים, מחירים ושעות פתיחה לאישור בעת ההזמנה.</p>
 </footer>
 
 <script>
@@ -935,6 +826,6 @@
     host.appendChild(btn);
   });
 </script>
-<a class="langfab" href="index.html" aria-label="Switch to English">🌐 English</a>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
