@@ -45,6 +45,7 @@
   <span class="sp"></span>
   <button class="tbtn" id="dl">⬇️ מפה אופליין</button>
   <button class="tbtn" id="locate">📍 מרכז עליי</button>
+  <a class="tbtn ghost" href="essentials-he.html">🧳 מדריך כיס</a>
   <a class="tbtn ghost" href="index.html">→ למסלול</a>
 </div>
 <div id="map"></div>
@@ -83,13 +84,18 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18, attrib
 // route line in order
 L.polyline(stops.map(s=>[s.lat,s.lng]),{color:'#D4AF61',weight:3,opacity:.7,dashArray:'2,7'}).addTo(map);
 
-const GM=(la,ln)=>'https://www.google.com/maps/search/?api=1&query='+la+','+ln;
+const WAZE=(la,ln)=>'https://waze.com/ul?ll='+la+','+ln+'&navigate=yes';
+function driveEst(km){var mn=Math.round(km*1.4/45*60);if(mn<2)return"";var h=Math.floor(mn/60),m=mn%60;return(h?h+" שע׳ ":"")+(m?m+" דק׳":"");}
 const bounds=[];
 stops.forEach((s,i)=>{
   bounds.push([s.lat,s.lng]);
   const icon=L.divIcon({className:'',html:`<div class="num" style="background:${s.c}">${i+1}</div>`,iconSize:[26,26],iconAnchor:[13,13]});
   L.marker([s.lat,s.lng],{icon}).addTo(map)
-    .bindPopup(`<b>${i+1}. ${s.n}</b><br>${s.d}<br><a href="${GM(s.lat,s.lng)}" target="_blank" rel="noopener">ניווט בגוגל מפות ↗</a>`);
+    .bindPopup((function(){
+    var drive="";
+    if(i>0){var km=haversine(stops[i-1].lat,stops[i-1].lng,s.lat,s.lng);var e=driveEst(km);if(e)drive='<br><span style="color:#5d6b72">\uD83D\uDE97 כ-'+e+' מהעצירה הקודמת (משוער)</span>';}
+    return '<b>'+(i+1)+'. '+s.n+'</b><br>'+s.d+drive+'<br><a href="'+WAZE(s.lat,s.lng)+'" target="_blank" rel="noopener">\uD83E\uDDED ניווט ב-Waze ↗</a>';
+  })());
 });
 map.fitBounds(bounds,{padding:[40,40]});
 

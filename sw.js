@@ -1,10 +1,10 @@
 // Montenegro trip — service worker v2 (offline app shell + offline map tiles)
-const CORE = 'mne-core-v2';
+const CORE = 'mne-core-v3';
 const RUNTIME = 'mne-runtime-v1';
 const TILES = 'mne-tiles-v1';
 const KEEP = [CORE, RUNTIME, TILES];
 const ASSETS = [
-  './', './index.html', './index-he.html', './map.html',
+  './', './index.html', './index-he.html', './map.html', './essentials-he.html', './qr-install.png',
   './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'
 ];
 self.addEventListener('install', e => {
