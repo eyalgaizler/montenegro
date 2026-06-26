@@ -1,5 +1,5 @@
 // Montenegro trip — service worker v2 (offline app shell + offline map tiles)
-const CORE = 'mne-core-v4';
+const CORE = 'mne-core-v5';
 const RUNTIME = 'mne-runtime-v1';
 const TILES = 'mne-tiles-v1';
 const KEEP = [CORE, RUNTIME, TILES];
