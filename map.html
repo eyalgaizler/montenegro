@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>מפת הטיול · מונטנגרו</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0E2A3B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="מונטנגרו">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800&family=Frank+Ruhl+Libre:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+  :root{--danube:#0E2A3B;--brass:#D4AF61;--teal:#2A8C99;--ink:#1c1c1a}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:"Heebo",system-ui,sans-serif;background:var(--danube)}
+  #topbar{position:fixed;top:0;inset-inline:0;z-index:1000;background:rgba(14,42,59,.97);color:#fff;
+    display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(212,175,97,.3)}
+  #topbar b{font-family:"Frank Ruhl Libre",serif;font-size:18px;color:#fff}
+  #topbar b span{color:var(--brass)}
+  #topbar .sp{margin-inline-start:auto}
+  .tbtn{font-size:13px;font-weight:700;text-decoration:none;color:var(--danube);background:var(--brass);
+    padding:8px 12px;border-radius:999px;border:1px solid #b8893a;white-space:nowrap;cursor:pointer}
+  .tbtn.ghost{background:transparent;color:#cdd9de;border-color:#3d5667}
+  #map{position:absolute;inset:54px 0 0 0}
+  #info{position:fixed;inset-inline:10px;bottom:10px;z-index:1000;background:rgba(255,253,248,.96);
+    border:1px solid #d9cfba;border-radius:14px;padding:12px 14px;box-shadow:0 6px 20px rgba(14,42,59,.35);
+    font-size:14.5px;color:var(--ink);max-width:520px;margin:0 auto}
+  #info b{color:#b8893a}
+  .leaflet-popup-content{font-family:"Heebo",sans-serif;direction:rtl;font-size:14px}
+  .leaflet-popup-content a{color:#0c5a52;font-weight:700}
+  .me{width:18px;height:18px;border-radius:50%;background:#1e88ff;border:3px solid #fff;box-shadow:0 0 0 3px rgba(30,136,255,.4)}
+  .num{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;
+    color:#3a2c08;font-weight:800;font-size:13px;font-family:"Heebo";border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+</style>
+</head>
+<body>
+<div id="topbar">
+  <b>מונטנגרו <span>·</span> מפת הטיול</b>
+  <span class="sp"></span>
+  <button class="tbtn" id="locate">📍 מרכז עליי</button>
+  <a class="tbtn ghost" href="index.html">→ למסלול</a>
+</div>
+<div id="map"></div>
+<div id="info">לחצו על <b>📍 מרכז עליי</b> כדי לאתר את מיקומכם ולראות מרחק לעצירה הקרובה. הסמנים ממוספרים לפי סדר הטיול — לחצו על סמן לפרטים ולניווט.</div>
+
+<script>
+// ---- trip stops in order (part A = mountains, part B = coast) ----
+const A='#D4AF61', B='#2A8C99';
+const stops=[
+ {n:"שדה התעופה טיבט",d:"יום 1 · נחיתה",lat:42.4047,lng:18.7233,c:A},
+ {n:"אגם קרופאץ'",d:"יום 1 · עצירת קפה",lat:42.7760,lng:18.8400,c:A},
+ {n:"ז'בליאק (בסיס ההרים)",d:"ימים 1–4 · לינה",lat:43.1547,lng:19.1228,c:A},
+ {n:"האגם השחור (Crno jezero)",d:"יום 2",lat:43.1417,lng:19.0950,c:A},
+ {n:"רכבל Savin Kuk",d:"יום 2",lat:43.1283,lng:19.0928,c:A},
+ {n:"אגם זמיניה (Zminje)",d:"יום 2",lat:43.1480,lng:19.1180,c:A},
+ {n:"תצפית צ'ורבאץ' (Ćurevac)",d:"יום 3",lat:43.1790,lng:19.1850,c:A},
+ {n:"גשר דורדביצ'ה טארה",d:"יום 3 · Restoran Most",lat:43.1503,lng:19.2947,c:A},
+ {n:"ביוגרדסקה גורה",d:"יום 4",lat:42.8970,lng:19.6010,c:A},
+ {n:"מויקובץ' (Mojkovac)",d:"יום 4 · קפה",lat:42.9603,lng:19.5830,c:A},
+ {n:"צטינייה (Cetinje)",d:"יום 5",lat:42.3910,lng:18.9214,c:B},
+ {n:"בודבה / פטרובאץ' (בסיס החוף)",d:"ימים 5–8 · לינה",lat:42.2864,lng:18.8400,c:B},
+ {n:"סווטי סטפן (תצפית שקיעה)",d:"יום 5",lat:42.2553,lng:18.8911,c:B},
+ {n:"וירפזאר · שיט אגם סקאדאר",d:"יום 6",lat:42.2440,lng:19.0940,c:B},
+ {n:"מפלי הניאגרה",d:"יום 6 · Restoran Nijagara",lat:42.3820,lng:19.3050,c:B},
+ {n:"תצפית פבלובה סטרנה",d:"יום 6",lat:42.3430,lng:19.0340,c:B},
+ {n:"פראסט (Perast)",d:"יום 7",lat:42.4870,lng:18.6980,c:B},
+ {n:"גבירתנו של הסלעים",d:"יום 7 · שיט קצר",lat:42.4860,lng:18.6880,c:B},
+ {n:"קוטור (עיר עתיקה)",d:"יום 7",lat:42.4240,lng:18.7710,c:B},
+ {n:"תצפית כביש הסרפנטינות",d:"יום 7",lat:42.4280,lng:18.8000,c:B},
+ {n:"לוסטיצה ביי (Luštica Bay)",d:"יום 9 · סיום + טיסה",lat:42.3460,lng:18.7000,c:B}
+];
+
+const map=L.map('map',{zoomControl:true}).setView([42.7,18.95],8);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:18, attribution:'© OpenStreetMap'}).addTo(map);
+
+// route line in order
+L.polyline(stops.map(s=>[s.lat,s.lng]),{color:'#D4AF61',weight:3,opacity:.7,dashArray:'2,7'}).addTo(map);
+
+const GM=(la,ln)=>'https://www.google.com/maps/search/?api=1&query='+la+','+ln;
+const bounds=[];
+stops.forEach((s,i)=>{
+  bounds.push([s.lat,s.lng]);
+  const icon=L.divIcon({className:'',html:`<div class="num" style="background:${s.c}">${i+1}</div>`,iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([s.lat,s.lng],{icon}).addTo(map)
+    .bindPopup(`<b>${i+1}. ${s.n}</b><br>${s.d}<br><a href="${GM(s.lat,s.lng)}" target="_blank" rel="noopener">ניווט בגוגל מפות ↗</a>`);
+});
+map.fitBounds(bounds,{padding:[40,40]});
+
+// ---- live GPS ----
+let meMarker=null, meAccuracy=null;
+const info=document.getElementById('info');
+function haversine(a,b,c,d){const R=6371,t=x=>x*Math.PI/180;const dLat=t(c-a),dLon=t(d-b);
+  const x=Math.sin(dLat/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dLon/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
+function onPos(p){
+  const {latitude:la,longitude:ln,accuracy:ac}=p.coords;
+  if(!meMarker){
+    meMarker=L.marker([la,ln],{icon:L.divIcon({className:'',html:'<div class="me"></div>',iconSize:[18,18],iconAnchor:[9,9]})}).addTo(map);
+    meAccuracy=L.circle([la,ln],{radius:ac,color:'#1e88ff',weight:1,fillColor:'#1e88ff',fillOpacity:.08}).addTo(map);
+  } else { meMarker.setLatLng([la,ln]); meAccuracy.setLatLng([la,ln]).setRadius(ac); }
+  // nearest stop
+  let best=null,bd=1e9;
+  stops.forEach(s=>{const dd=haversine(la,ln,s.lat,s.lng);if(dd<bd){bd=dd;best=s;}});
+  const dist=bd<1?Math.round(bd*1000)+' מ׳':bd.toFixed(1)+' ק״מ';
+  info.innerHTML=`📍 <b>אתם כאן.</b> העצירה הקרובה: <b>${best.n}</b> — במרחק ${dist} (בקו אווויר).`;
+}
+function onErr(e){ info.innerHTML='⚠️ לא הצלחנו לאתר מיקום. ודאו שאישרתם גישה למיקום ושה-GPS דלוק.'; }
+document.getElementById('locate').addEventListener('click',()=>{
+  if(!navigator.geolocation){info.textContent='הדפדפן לא תומך באיתור מיקום.';return;}
+  info.innerHTML='⏳ מאתר מיקום…';
+  navigator.geolocation.getCurrentPosition(p=>{onPos(p);map.setView([p.coords.latitude,p.coords.longitude],12);},onErr,{enableHighAccuracy:true,timeout:10000,maximumAge:5000});
+  navigator.geolocation.watchPosition(onPos,onErr,{enableHighAccuracy:true,maximumAge:5000});
+});
+
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
+</script>
+</body>
+</html>
