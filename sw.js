@@ -1,5 +1,5 @@
 // Montenegro trip — service worker v2 (offline app shell + offline map tiles)
-const CORE = 'mne-core-v3';
+const CORE = 'mne-core-v4';
 const RUNTIME = 'mne-runtime-v1';
 const TILES = 'mne-tiles-v1';
 const KEEP = [CORE, RUNTIME, TILES];
@@ -25,6 +25,11 @@ self.addEventListener('fetch', e => {
     return;
   }
   // Navigations: cache-first, fall back to network, then to index
+  // Weather API: always network-first (live), no caching
+  if (url.hostname === 'api.open-meteo.com') {
+    e.respondWith(fetch(req).catch(() => caches.match(req)));
+    return;
+  }
   if (req.mode === 'navigate') {
     e.respondWith(caches.match(req).then(h => h || fetch(req).catch(() => caches.match('./index.html'))));
     return;
